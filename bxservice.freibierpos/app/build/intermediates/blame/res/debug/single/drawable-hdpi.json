@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_done_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/freibier_logo.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/freibier_logo.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_note_add_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_note_add_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_settings_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_restaurant_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_restaurant_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_delete_forever_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_delete_forever_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_delete_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_splash_bxlogo.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_splash_bxlogo.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/euro30.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/euro30.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_local_printshop_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_local_printshop_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_chrome_reader_mode_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_chrome_reader_mode_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_donut_large_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_donut_large_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_dvr_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_dvr_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_chevron_right_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_chevron_right_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_info_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_info_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_card_giftcard_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/ic_card_giftcard_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-hdpi/save_pdf.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-hdpi/save_pdf.png"
+    }
+]

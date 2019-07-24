@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/pref_data_sync.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/pref_data_sync.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/searchable.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/searchable.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/pref_order_settings.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/pref_order_settings.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/pref_headers.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/pref_headers.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/pref_about.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/pref_about.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/xml/pref_server.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/xml/pref_server.xml"
+    }
+]
