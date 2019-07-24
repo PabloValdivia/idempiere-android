@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/libs/idempierewsc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0cf9818b440786d415557ff89ae27dec448d4f3f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/pre-dexed/debug/idempierewsc_a9ef2cfc9f859aeb1f4a8c78a2513a79bfdf3f2a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bd7125ede851adf0ef8912a5509da07d3d3fa2ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/libs/idempierewsc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0cf9818b440786d415557ff89ae27dec448d4f3f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/2/idempierewsc_a9ef2cfc9f859aeb1f4a8c78a2513a79bfdf3f2a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f164c00d234c9501030924764245f90e3ae115c7">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f30f347d19eb79f7b724ceaa9f7af0f39a87d795/classes.dex" />
+    </item>
+
+</items>
