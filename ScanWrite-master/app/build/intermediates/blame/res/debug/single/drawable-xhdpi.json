@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings.png",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings.png",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings.png",
+        "source": "/usr/local/ScanWrite/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings.png",
+        "source": "/usr/local/ERPDeliveryReceipt/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/src/main/res/drawable-xhdpi/ic_settings.png"
+    }
+]

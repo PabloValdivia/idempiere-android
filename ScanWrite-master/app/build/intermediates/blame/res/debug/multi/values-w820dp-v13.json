@@ -1,0 +1,122 @@
+[
+    {
+        "outputFile": "/usr/local/ScanWrite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/usr/local/ScanWrite/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/usr/local/ERPDeliveryReceipt/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/opt/android-studio/Progetti/ScanWrite-master/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/home/idempiere/Scaricati/ScanWrite-master/app/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            }
+        ]
+    }
+]

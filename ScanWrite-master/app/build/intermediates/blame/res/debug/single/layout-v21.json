@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout-v21/notification_action.xml"
+    }
+]

@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/usr/local/ScanWrite/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/color/abc_tint_spinner.xml"
+    }
+]

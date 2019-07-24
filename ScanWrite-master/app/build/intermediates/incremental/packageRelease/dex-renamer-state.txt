@@ -1,0 +1,4 @@
+#Mon Jul 22 16:14:37 CEST 2019
+base.0=/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

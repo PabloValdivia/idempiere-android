@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/home/idempiere/Scaricati/ScanWrite-master/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/home/idempiere/Scaricati/ScanWrite-master/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/usr/local/ScanWrite/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/usr/local/ScanWrite/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/usr/local/ERPDeliveryReceipt/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/usr/local/ERPDeliveryReceipt/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/opt/android-studio/Progetti/ScanWrite-master/app/build/intermediates/res/merged/debug/menu/menu.xml",
+        "source": "/opt/android-studio/Progetti/ScanWrite-master/app/src/main/res/menu/menu.xml"
+    }
+]

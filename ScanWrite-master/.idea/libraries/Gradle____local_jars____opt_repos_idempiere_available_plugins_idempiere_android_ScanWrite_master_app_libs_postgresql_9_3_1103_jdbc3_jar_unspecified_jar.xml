@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_jars__:/opt/repos/idempiere-available-plugins/idempiere-android/ScanWrite-master/app/libs/postgresql-9.3-1103.jdbc3.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/postgresql-9.3-1103.jdbc3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
