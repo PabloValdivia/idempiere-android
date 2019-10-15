@@ -44,6 +44,14 @@
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-xhdpi/ic_delete_forever_white_24dp.png"
     },
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_splash_bxlogo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-xhdpi/ic_splash_bxlogo_old.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-xhdpi/freibier_logo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-xhdpi/freibier_logo_old.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_donut_large_black_24dp.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-xhdpi/ic_donut_large_black_24dp.png"
     },

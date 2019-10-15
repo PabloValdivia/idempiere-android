@@ -195,6 +195,7 @@ public class PosProductHelper extends PosObjectHelper {
                 " AND " + ProductContract.ProductDB.COLUMN_NAME_IS_SOLD + " = 1" +
                 " ORDER BY " + ProductContract.ProductDB.COLUMN_NAME_NAME;
 
+
         Log.d(LOG_TAG, selectQuery);
 
         SQLiteDatabase db = this.getReadableDatabase();

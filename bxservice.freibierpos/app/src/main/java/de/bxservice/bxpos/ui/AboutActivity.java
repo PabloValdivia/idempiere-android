@@ -66,7 +66,7 @@ public class AboutActivity extends AppCompatActivity {
         str1.setSpan(new ForegroundColorSpan(Color.GRAY), 0, str1.length(), 0);
         builder.append(str1);
 
-        SpannableString str2= new SpannableString(" Diego Andrés Ruiz Gómez");
+        SpannableString str2= new SpannableString(" iDempiere Consulting");
         str2.setSpan(new ForegroundColorSpan(Color.BLUE), 0, str2.length(), 0);
         builder.append(str2);
 

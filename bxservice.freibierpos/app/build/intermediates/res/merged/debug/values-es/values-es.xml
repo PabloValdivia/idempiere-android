@@ -68,7 +68,7 @@
     <string name="app_name">Freibier POS</string>
     <string name="approve_void">Confirmación de anulación</string>
     <string name="assign_password">El PIN no ha sido asignado. Póngase en contacto con el administrador.</string>
-    <string name="bx_pos">BX POS</string>
+    <string name="bx_pos">IC POS</string>
     <string name="cancel">Cancelar</string>
     <string name="cash">Efectivo</string>
     <string name="change">Cambio</string>

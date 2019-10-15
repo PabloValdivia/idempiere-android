@@ -1,4 +1,4 @@
-#Wed Jul 24 11:52:47 CEST 2019
+#Fri Sep 06 09:32:57 CEST 2019
 file.2=/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e1aa95742fe5572a31bee2ee3befc236a2cda3c/classes.dex
 base.2=/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e1aa95742fe5572a31bee2ee3befc236a2cda3c
 file.1=/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_85c819f6668eb406b267355efc904fa76810436a/classes.dex

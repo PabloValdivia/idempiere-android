@@ -4,6 +4,10 @@
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-mdpi/ic_donut_large_black_24dp.png"
     },
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_splash_bxlogo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-mdpi/ic_splash_bxlogo_old.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-mdpi/save_pdf.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-mdpi/save_pdf.png"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_card_giftcard_white_24dp.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-mdpi/ic_card_giftcard_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-mdpi/freibier_logo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/src/main/res/drawable-mdpi/freibier_logo_old.png"
     },
     {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/bxservice.freibierpos/app/build/intermediates/res/merged/debug/drawable-mdpi/euro30.png",
