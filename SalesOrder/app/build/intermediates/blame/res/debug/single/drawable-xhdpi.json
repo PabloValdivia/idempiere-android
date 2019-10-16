@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/freibier_logo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/freibier_logo_old.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_dvr_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_dvr_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_splash_bxlogo_old.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_splash_bxlogo_old.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_info_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_info_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_delete_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_splash_bxlogo.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_splash_bxlogo.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_done_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/save_pdf.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/save_pdf.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_chrome_reader_mode_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_chrome_reader_mode_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_restaurant_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_restaurant_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_settings_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_settings_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_donut_large_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_donut_large_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_note_add_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_note_add_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_delete_forever_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_delete_forever_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_card_giftcard_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_card_giftcard_white_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_chevron_right_black_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_chevron_right_black_24dp.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/euro30.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/euro30.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/freibier_logo.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/freibier_logo.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_local_printshop_white_24dp.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/src/main/res/drawable-xhdpi/ic_local_printshop_white_24dp.png"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">860738623254-ujeraglgda7232hv0ngo5ne4477ibmod.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bx-service-pos.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">860738623254</string>
+    <string name="google_api_key" translatable="false">AIzaSyBt33Ck_25KlQ4MFWiv03y-OfyB1gSbwXs</string>
+    <string name="google_app_id" translatable="false">1:860738623254:android:bba28737dafb4639</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBt33Ck_25KlQ4MFWiv03y-OfyB1gSbwXs</string>
+    <string name="google_storage_bucket" translatable="false">bx-service-pos.appspot.com</string>
+</resources>

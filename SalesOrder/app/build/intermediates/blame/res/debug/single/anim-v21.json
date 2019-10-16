@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/home/idempiere/.android/build-cache/80734aeb4a1f80212821938d1130c7fe25c575de/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/home/idempiere/.android/build-cache/80734aeb4a1f80212821938d1130c7fe25c575de/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

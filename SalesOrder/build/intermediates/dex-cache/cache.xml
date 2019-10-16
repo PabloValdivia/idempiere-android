@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/libs/idempierewsc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0cf9818b440786d415557ff89ae27dec448d4f3f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder/app/build/intermediates/pre-dexed/debug/idempierewsc_fc6a550df9147ed6709cbb167faa24cd554f693f.jar" />
+    </item>
+
+</items>
