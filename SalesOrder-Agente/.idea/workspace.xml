@@ -10,18 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95ab0d0d-0f9f-4fa6-b40e-3f52ff53df44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/logic/daomanager/BPartnerManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/logic/model/idempiere/CBPartner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/logic/webservices/BPartnerWebServicesAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/persistence/dbcontract/BPartnerContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/persistence/helper/PosBPartnerHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/ui/SelectBPartnerActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/ui/adapter/CreateBPartnerPagerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/ui/fragment/BPartnerMenuFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_select_businesspartner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_select_bpartner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_select_bpartner_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SalesOrder/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SalesOrder/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +35,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/ui/fragment/MainTableFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="114">
               <caret line="109" column="65" lean-forward="true" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
             </state>
           </provider>
@@ -181,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="497" />
     <option name="y" value="173" />
     <option name="width" value="1232" />
@@ -425,11 +414,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2016" y="229" width="1232" height="712" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.45362562" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.28708646" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -440,9 +428,9 @@
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4994664" weight="0.32983193" />
       <window_info anchor="bottom" id="TODO" order="1" sideWeight="0.4994664" weight="0.32983193" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49786553" weight="0.32983193" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.112141654" side_tool="true" visible="true" weight="0.5479452" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.07417289" side_tool="true" visible="true" weight="0.34768906" />
       <window_info anchor="bottom" id="Build" order="4" sideWeight="0.8906083" weight="0.24017467" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.88785833" visible="true" weight="0.5479452" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.9258271" weight="0.33613446" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.89114195" weight="0.33296943" />
       <window_info anchor="bottom" id="Logcat" order="7" sideWeight="0.49839914" weight="0.32969433" />
       <window_info anchor="bottom" id="Android Profiler" order="8" sideWeight="0.4994664" weight="0.32983193" />
@@ -1112,7 +1100,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/de/bxservice/bxpos/ui/fragment/MainTableFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state relative-caret-position="114">
           <caret line="109" column="65" lean-forward="true" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
         </state>
       </provider>
