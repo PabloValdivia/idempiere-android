@@ -1,0 +1,7 @@
+#Mon Oct 21 17:35:37 CEST 2019
+base.0=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b59bd9663f2de81f2b3116347d949c349df9a9ce
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a5dcdbdaafe13321461c22db5cc0be4d0447e21/classes.dex
+base.1=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a5dcdbdaafe13321461c22db5cc0be4d0447e21
+file.0=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b59bd9663f2de81f2b3116347d949c349df9a9ce/classes.dex
