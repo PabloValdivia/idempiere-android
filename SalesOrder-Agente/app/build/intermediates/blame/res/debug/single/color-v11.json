@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/idempiere/.android/build-cache/82515e7c050a55f392634d03f1a639a2f37c239c/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/idempiere/.android/build-cache/82515e7c050a55f392634d03f1a639a2f37c239c/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
