@@ -354,6 +354,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
                 posOrder = (POSOrder) getIntent().getSerializableExtra(EditOrderActivity.EXTRA_ORDER);
                 selectedTable = posOrder.getTable();
                 numberOfGuests = posOrder.getGuestNumber();
+                BP_PriceList_ID = posOrder.getCB_PriceList_ID();
             }
         }
     }

@@ -106,7 +106,7 @@ public class ProductMenuFragment extends Fragment {
             item = new NewOrderGridItem();
             item.setName(product.getProductKey());
             item.setKey(product.getProductKey());
-int a = ((CreateOrderActivity) getActivity()).getBP_PriceList_ID();
+
             if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
                 item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
             else

@@ -77,11 +77,12 @@ public class BPartnerWebServicesAdapter extends AbstractWSObject {
                             isActive = "Y".equalsIgnoreCase(field.getStringValue());
                         else if ("Value".equalsIgnoreCase(field.getColumn()))
                             bpartnerKey = field.getStringValue();
-                        else if ("M_PriceList_ID".equalsIgnoreCase(field.getColumn()))
+                        else if ("M_PriceList_ID".equalsIgnoreCase(field.getColumn())&& !field.getStringValue().isEmpty())
                             priceListID = Integer.valueOf(field.getStringValue());
                     }
 
-                    if(bpartnerName != null && bpartnerId != 0 && bpartnerKey != null) {
+                    //se nel BP non c' il listino allora non vedo il BPartner
+                    if(bpartnerName != null && bpartnerId != 0 && bpartnerKey != null && priceListID != 0) {
                         CBPartner p = new CBPartner();
                         p.setBPartnerID(bpartnerId);
                         p.setBPartnerName(bpartnerName);
