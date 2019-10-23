@@ -347,8 +347,8 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
                 //Recupero le informazioi del Business Partner dell'activity precedente
                 param_bpartner = (CBPartner) getIntent().getSerializableExtra(SelectBPartnerActivity.BPARTNER_INO);
                 BPartner_ID = param_bpartner.getBPartnerID();
-    //            BP_PriceList_ID = param_bpartner.getPriceListID();
-                BP_PriceList_ID=1000003;
+                BP_PriceList_ID = param_bpartner.getPriceListID();
+            //    BP_PriceList_ID=1000003;
 
             } else if ("EditOrderActivity".equals(caller)) {
                 posOrder = (POSOrder) getIntent().getSerializableExtra(EditOrderActivity.EXTRA_ORDER);

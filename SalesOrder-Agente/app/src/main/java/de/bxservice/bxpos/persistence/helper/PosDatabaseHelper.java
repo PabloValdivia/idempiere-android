@@ -271,6 +271,8 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
                     ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID + " INTEGER NOT NULL REFERENCES "
                     + Tables.TABLE_PRODUCT + "(" + ProductContract.ProductDB.COLUMN_NAME_PRODUCT_ID + ") ON DELETE CASCADE" +  //FK to the product
                     ", " +
+                    ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID + " INTEGER NOT NULL" +
+                    ", " +
                     ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID + " INTEGER NOT NULL" +
                     ", " +
                     ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE + " NUMERIC" +

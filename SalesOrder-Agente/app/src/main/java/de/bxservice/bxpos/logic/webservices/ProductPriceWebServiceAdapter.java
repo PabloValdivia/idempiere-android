@@ -79,6 +79,7 @@ public class ProductPriceWebServiceAdapter extends AbstractWSObject {
             } else {
 
                 Log.i("info", "Total rows: " + response.getNumRows());
+                int priceListId;
                 int priceListVersionId;
                 int productId;
                 int productPriceId;
@@ -88,6 +89,7 @@ public class ProductPriceWebServiceAdapter extends AbstractWSObject {
                 for (int i = 0; i < response.getDataSet().getRowsCount(); i++) {
 
                     Log.i("info", "Row: " + (i + 1));
+                    priceListId = 0;
                     priceListVersionId = 0;
                     productId = 0;
                     productPriceId = 0;
@@ -109,6 +111,8 @@ public class ProductPriceWebServiceAdapter extends AbstractWSObject {
                             price = new BigDecimal(field.getStringValue());
                         else if ("PriceLimit".equalsIgnoreCase(field.getColumn()))
                             priceLimit = new BigDecimal(field.getStringValue());
+                        else if("M_PriceList_ID".equalsIgnoreCase(field.getColumn()))
+                            priceListId = Integer.valueOf(field.getStringValue());
 
                     }
 
@@ -116,6 +120,7 @@ public class ProductPriceWebServiceAdapter extends AbstractWSObject {
                             productId != 0 && price != null) {
                         ProductPrice p = new ProductPrice();
                         p.setProductID(productId);
+                        p.setPriceListID(priceListId);
                         p.setPriceListVersionID(priceListVersionId);
                         p.setProductPriceID(productPriceId);
                         p.setStdPrice(price);

@@ -55,6 +55,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
         ContentValues values = new ContentValues();
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_PRICE_ID, productPrice.getProductPriceID());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID, productPrice.getProductID());
+        values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID, productPrice.getPriceListID());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID, productPrice.getPriceListVersionID());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE, productPrice.getIntegerStdPrice());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT, productPrice.getIntegerPriceLimit());
@@ -89,6 +90,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
         ProductPrice productPrice = new ProductPrice();
         productPrice.setProductPriceID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_PRICE_ID)));
         productPrice.setProductID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID)));
+        productPrice.setPriceListID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID)));
         productPrice.setPriceListVersionID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID)));
         productPrice.setStdPriceFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE)));
         productPrice.setPriceLimitFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT)));
@@ -107,7 +109,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
 
         String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT_PRICE +
                 " WHERE " + ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID + " = ?" +
-                " AND " + ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID + " = ?";
+                " AND " + ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID + " = ?";
 
         Log.d(LOG_TAG, selectQuery);
 
@@ -124,6 +126,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
         ProductPrice productPrice = new ProductPrice();
         productPrice.setProductPriceID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_PRICE_ID)));
         productPrice.setProductID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID)));
+        productPrice.setPriceListID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID)));
         productPrice.setPriceListVersionID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID)));
         productPrice.setStdPriceFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE)));
         productPrice.setPriceLimitFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT)));
@@ -155,6 +158,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
         ProductPrice productPrice = new ProductPrice();
         productPrice.setProductPriceID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_PRICE_ID)));
         productPrice.setProductID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID)));
+        productPrice.setPriceListID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID)));
         productPrice.setPriceListVersionID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID)));
         productPrice.setStdPriceFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE)));
         productPrice.setPriceLimitFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT)));
@@ -172,6 +176,7 @@ public class PosProductPriceHelper extends PosObjectHelper {
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_ID, productPrice.getPriceListID());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID, productPrice.getPriceListVersionID());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE, productPrice.getIntegerStdPrice());
         values.put(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT, productPrice.getIntegerPriceLimit());

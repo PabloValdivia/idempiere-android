@@ -37,6 +37,7 @@ public class ProductPrice {
 
     public static final String M_ProductPrice_ID = "M_ProductPrice_ID";
 
+    private int priceListID;
     private int priceListVersionID;
     private int productPriceID;
     private MProduct product;
@@ -44,6 +45,14 @@ public class ProductPrice {
     private BigDecimal priceLimit;
     private int productID;
     private PosProductPriceManagement productPriceManager;
+
+    public int getPriceListID() {
+        return priceListID;
+    }
+
+    public void setPriceListID(int priceListID) {
+        this.priceListID = priceListID;
+    }
 
     public int getPriceListVersionID() {
         return priceListVersionID;

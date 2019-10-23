@@ -4,12 +4,12 @@
         "source": "/home/idempiere/.android/build-cache/82515e7c050a55f392634d03f1a639a2f37c239c/output/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_focused.9.png",
-        "source": "/home/idempiere/.android/build-cache/c0a145e6d56d177ca2cfdb215459685226487673/output/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "/home/idempiere/.android/build-cache/c0a145e6d56d177ca2cfdb215459685226487673/output/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/home/idempiere/.android/build-cache/c0a145e6d56d177ca2cfdb215459685226487673/output/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png",
