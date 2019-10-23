@@ -81,6 +81,7 @@ public class POSOrder implements Serializable {
     private long orderId;
     private String documentNo;
     private int bpartner;
+    private int bp_pricelist;
     private Table table;
     private int guestNumber = 0;
     private String status;
@@ -124,7 +125,7 @@ public class POSOrder implements Serializable {
                     newItem = false;
                     orderLine.setQtyOrdered(orderLine.getQtyOrdered() + 1); //add 1 to the qty previously ordered
                     if (overridePrice != null) {
-                        orderLine.setLineNetAmt(orderLine.getLineNetAmt().add(overridePrice));
+                        orderLine.setLineNetAmt(orderLine.getLineNetAmt(orderLine.getOrder().getCB_PriceList_ID()).add(overridePrice));
                     }
                     orderLine.updateLine(ctx);
                 }
@@ -203,7 +204,7 @@ public class POSOrder implements Serializable {
 
         //Copy the orderLine
         if (orderingLines.contains(orderLine)) {
-            addItem(orderLine.getProduct(), orderLine.getLineNetAmt(), null);
+            addItem(orderLine.getProduct(), orderLine.getLineNetAmt(orderLine.getOrder().getCB_PriceList_ID()), null);
             return;
         }
 
@@ -264,9 +265,9 @@ public class POSOrder implements Serializable {
             }
 
             if (productAmtHashMap.isEmpty() || productAmtHashMap.get(line.getProduct().getProductName()) == null) {
-                productAmtHashMap.put(line.getProduct().getProductName(), line.getLineNetAmt());
+                productAmtHashMap.put(line.getProduct().getProductName(), line.getLineNetAmt(bp_pricelist));
             } else {
-                productAmtHashMap.put(line.getProduct().getProductName(), productAmtHashMap.get(line.getProduct().getProductName()).add(line.getLineNetAmt()));
+                productAmtHashMap.put(line.getProduct().getProductName(), productAmtHashMap.get(line.getProduct().getProductName()).add(line.getLineNetAmt(bp_pricelist)));
             }
         }
 
@@ -373,6 +374,14 @@ public class POSOrder implements Serializable {
 
     public void setCBPartner_ID(int bpartner) {
         this.bpartner = bpartner;
+    }
+
+    public int getCB_PriceList_ID() {
+        return bp_pricelist;
+    }
+
+    public void setCB_PriceList_ID(int bp_pricelist) {
+        this.bp_pricelist = bp_pricelist;
     }
 
     /**
@@ -488,17 +497,17 @@ public class POSOrder implements Serializable {
      * Returns the total sum of the order lines
      * @return
      */
-    public BigDecimal getTotallines() {
+    public BigDecimal getTotallines(int pricelist_id) {
         totallines = BigDecimal.ZERO;
         for (POSOrderLine orderLine : orderedLines) {
-            totallines = orderLine.getLineNetAmt().add(totallines);
+            totallines = orderLine.getLineNetAmt(pricelist_id).add(totallines);
         }
         return totallines;
     }
 
-    public String getTotal() {
+    public String getTotal(int pricelist_id) {
         NumberFormat currencyFormat = PosProperties.getInstance().getCurrencyFormat();
-        return currencyFormat.format(getTotallines());
+        return currencyFormat.format(getTotallines(pricelist_id));
     }
 
     public BigDecimal getChangeAmt() {
@@ -536,10 +545,10 @@ public class POSOrder implements Serializable {
      * Returns the total sum of the ordering lines
      * @return
      */
-    public BigDecimal getTotalOrderinglines() {
+    public BigDecimal getTotalOrderinglines(int pricelist_id) {
         totallines = BigDecimal.ZERO;
         for (POSOrderLine orderLine : orderingLines) {
-            totallines = orderLine.getLineNetAmt().add(totallines);
+            totallines = orderLine.getLineNetAmt(pricelist_id).add(totallines);
         }
         return totallines;
     }
@@ -568,8 +577,8 @@ public class POSOrder implements Serializable {
      * in an integer to be save in the database
      * @return
      */
-    public Integer getTotallinesInteger() {
-        return getTotallines().multiply(BigDecimal.valueOf(100)).intValue(); //total * 100
+    public Integer getTotallinesInteger(int pricelist_id) {
+        return getTotallines(pricelist_id).multiply(BigDecimal.valueOf(100)).intValue(); //total * 100
     }
 
     /**

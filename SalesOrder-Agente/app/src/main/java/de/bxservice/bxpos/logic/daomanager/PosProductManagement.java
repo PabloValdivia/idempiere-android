@@ -50,8 +50,12 @@ public class PosProductManagement extends AbstractObjectManagement {
         return true;
     }
 
-    public ProductPrice getProductPrice(MProduct product) {
-        return dataMapper.getProductPriceByProduct(product);
+    public ProductPrice getProductPrice(MProduct product,int price_list_id) {
+        return dataMapper.getProductPriceByProduct(product, price_list_id);
+    }
+
+    public ProductPrice getProductPricePOS(MProduct product) {
+        return dataMapper.getProductPriceByProductPOS(product);
     }
 
     public List<MProduct> getSoldProducts() {

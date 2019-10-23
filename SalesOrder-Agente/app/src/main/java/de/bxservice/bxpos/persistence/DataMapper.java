@@ -618,9 +618,14 @@ public class DataMapper implements Serializable {
         return orderHelper.getOrderDate(order);
     }
 
-    public ProductPrice getProductPriceByProduct(MProduct product) {
+    public ProductPrice getProductPriceByProduct(MProduct product, int price_list_id) {
         PosProductPriceHelper productPriceHelper = new PosProductPriceHelper(mContext);
-        return productPriceHelper.getProductPriceByProduct(product);
+        return productPriceHelper.getProductPriceByProduct(product, price_list_id);
+    }
+
+    public ProductPrice getProductPriceByProductPOS(MProduct product) {
+        PosProductPriceHelper productPriceHelper = new PosProductPriceHelper(mContext);
+        return productPriceHelper.getProductPriceByProductPOS(product);
     }
 
     public ProductPrice getProductPrice(long id) {

@@ -108,6 +108,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
     private POSOrder posOrder = null;
     private CBPartner param_bpartner = null;
     private int BPartner_ID=0;
+    private int BP_PriceList_ID = 0;
     private int numberOfGuests = 0;
     private Table selectedTable = null;
     private String remarkNote = "";
@@ -234,8 +235,8 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
             else
                 gridItem.setName(product.getProductKey() + " " + product.getProductName());
 
-            if (!product.askForPrice())
-                gridItem.setPrice(currencyFormat.format(product.getProductPriceValue()));
+            if (!product.askForPrice(BP_PriceList_ID))
+                gridItem.setPrice(currencyFormat.format(product.getProductPriceValue(BP_PriceList_ID)));
             else
                 gridItem.setPrice("");
 
@@ -346,6 +347,8 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
                 //Recupero le informazioi del Business Partner dell'activity precedente
                 param_bpartner = (CBPartner) getIntent().getSerializableExtra(SelectBPartnerActivity.BPARTNER_INO);
                 BPartner_ID = param_bpartner.getBPartnerID();
+    //            BP_PriceList_ID = param_bpartner.getPriceListID();
+                BP_PriceList_ID=1000003;
 
             } else if ("EditOrderActivity".equals(caller)) {
                 posOrder = (POSOrder) getIntent().getSerializableExtra(EditOrderActivity.EXTRA_ORDER);
@@ -523,7 +526,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
             createOrder();
 
         //If the product price is zero and the price limit > 0
-        if (product.askForPrice()) {
+        if (product.askForPrice(BP_PriceList_ID)) {
             showSetPriceDialog(product);
         } else {
             posOrder.addItem(product, getBaseContext());
@@ -544,6 +547,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
         posOrder = new POSOrder();
         posOrder.setGuestNumber(numberOfGuests);
         posOrder.setCBPartner_ID(BPartner_ID);
+        posOrder.setCB_PriceList_ID(BP_PriceList_ID);
         posOrder.setOrderRemark(remarkNote);
         posOrder.setTable(selectedTable);
         posOrder.setStatus(POSOrder.DRAFT_STATUS);
@@ -578,6 +582,11 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
         if(posOrder == null)
             return 0;
         return posOrder.getProductQtyOrdered(product);
+    }
+
+    public int getBP_PriceList_ID() {
+
+        return BP_PriceList_ID;
     }
 
 

@@ -66,7 +66,7 @@ public class ClosedOrderAdapter extends RecyclerView.Adapter<ClosedOrderAdapter.
         public void bindOrder(POSOrder order) {
             txtOrderNumber.setText(itemView.getResources().getString(R.string.order_no, order.getDocumentNo()));
             txtTableName.setText(order.getTable() != null ? order.getTable().getTableName() : itemView.getResources().getString(R.string.unset_table));
-            txtTotal.setText(itemView.getResources().getString(R.string.total_value, order.getTotal()));
+            txtTotal.setText(itemView.getResources().getString(R.string.total_value, order.getTotal(order.getCB_PriceList_ID())));
 
             String status = order.getStatus();
             if (POSOrder.COMPLETE_STATUS.equals(status))

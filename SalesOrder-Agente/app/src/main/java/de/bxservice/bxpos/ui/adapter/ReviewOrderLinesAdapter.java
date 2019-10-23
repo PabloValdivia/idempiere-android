@@ -57,7 +57,7 @@ public class ReviewOrderLinesAdapter extends RecyclerView.Adapter<ReviewOrderLin
         public void bindOrderLine(POSOrderLine orderLine) {
             txtQty.setText(String.valueOf(orderLine.getQtyOrdered()));
             txtProductName.setText(orderLine.getProduct().getProductKey());
-            txtPrice.setText(orderLine.getLineTotalAmt());
+            txtPrice.setText(orderLine.getLineTotalAmt(orderLine.getOrder().getCB_PriceList_ID()));
         }
     }
 

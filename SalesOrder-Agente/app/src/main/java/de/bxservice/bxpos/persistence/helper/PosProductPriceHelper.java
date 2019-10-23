@@ -102,7 +102,39 @@ public class PosProductPriceHelper extends PosObjectHelper {
     /*
     * get single product price by product id
     */
-    public ProductPrice getProductPriceByProduct(MProduct product) {
+    public ProductPrice getProductPriceByProduct(MProduct product, int price_list_id ) {
+        SQLiteDatabase db = getReadableDatabase();
+
+        String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT_PRICE +
+                " WHERE " + ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID + " = ?" +
+                " AND " + ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID + " = ?";
+
+        Log.d(LOG_TAG, selectQuery);
+
+        Cursor c = db.rawQuery(selectQuery, new String[] {String.valueOf(product.getProductID()), String.valueOf(price_list_id)});
+
+        if (c != null && c.getCount() > 0)
+            c.moveToFirst();
+        else {
+            if (c != null)
+                c.close();
+            return null;
+        }
+
+        ProductPrice productPrice = new ProductPrice();
+        productPrice.setProductPriceID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_PRICE_ID)));
+        productPrice.setProductID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRODUCT_ID)));
+        productPrice.setPriceListVersionID(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIST_VERSION_ID)));
+        productPrice.setStdPriceFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_STD_PRICE)));
+        productPrice.setPriceLimitFromInt(c.getInt(c.getColumnIndex(ProductPriceContract.ProductPriceDB.COLUMN_NAME_PRICE_LIMIT)));
+        productPrice.setProduct(product);
+
+        c.close();
+
+        return productPrice;
+    }
+
+    public ProductPrice getProductPriceByProductPOS(MProduct product ) {
         SQLiteDatabase db = getReadableDatabase();
 
         String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT_PRICE +

@@ -155,7 +155,7 @@ public class SplitOrderDialogFragment extends DialogFragment {
 
         for(POSOrderLine orderLine : mGridData) {
             totalQty = totalQty + orderLine.getQtyOrdered();
-            total = total.add(orderLine.getLineNetAmt());
+            total = total.add(orderLine.getLineNetAmt(order.getCB_PriceList_ID()));
         }
 
         int newTotalQty;
@@ -165,7 +165,7 @@ public class SplitOrderDialogFragment extends DialogFragment {
 
         if (selectedLines != null && !selectedLines.isEmpty()) {
             for(POSOrderLine orderLine : selectedLines) {
-                newTotal = newTotal.add(orderLine.getLineNetAmt());
+                newTotal = newTotal.add(orderLine.getLineNetAmt(order.getCB_PriceList_ID()));
             }
         }
 

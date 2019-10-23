@@ -81,7 +81,7 @@ public class POSOrderTax implements Serializable {
 
         for (POSOrderLine line : order.getOrderedLines()) {
             if (line.getLineTax().getTaxID() == tax.getTaxID()) {
-                BigDecimal baseAmt = line.getLineNetAmt();
+                BigDecimal baseAmt = line.getLineNetAmt(order.getCB_PriceList_ID());
                 taxBaseAmt = taxBaseAmt.add(baseAmt);
             }
         }

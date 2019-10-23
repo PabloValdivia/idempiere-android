@@ -146,6 +146,8 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
                     ", " +
                     PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID + " INTEGER" +
                     ", " +
+                    PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID + " INTEGER" +
+                    ", " +
                     PosOrderContract.POSOrderDB.COLUMN_NAME_TOTALLINES + " NUMERIC" +
                     ", " +
                     PosOrderContract.POSOrderDB.COLUMN_NAME_SURCHARGE + " NUMERIC" +

@@ -135,7 +135,7 @@ public class CreateOrderDetailFragment extends Fragment {
 
         qtyTextView.setText(getString(R.string.subtotal));
         subtotalTextView.setText(getString(R.string.quantity));
-        qtyValueTextView.setText(currencyFormat.format(mOrder.getTotalOrderinglines()));
+        qtyValueTextView.setText(currencyFormat.format(mOrder.getTotalOrderinglines(mOrder.getCB_PriceList_ID())));
         subtotalAmtTextView.setText(String.valueOf(mOrder.getOrderingQty()));
 
     }

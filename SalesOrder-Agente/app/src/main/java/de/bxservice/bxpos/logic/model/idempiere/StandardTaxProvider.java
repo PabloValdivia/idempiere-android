@@ -48,7 +48,7 @@ public class StandardTaxProvider implements ITaxProvider {
 
         for (POSOrderLine line : order.getOrderedLines())
         {
-            totalLines = totalLines.add(line.getLineNetAmt());
+            totalLines = totalLines.add(line.getLineNetAmt(order.getCB_PriceList_ID()));
 
             if (line.getLineTax() != null) {
                 Integer taxID = new Integer(line.getLineTax().getTaxID());

@@ -70,13 +70,13 @@ public class SalesReport extends Report {
             htmlResult.append(htmlTemplate.getHtmlTableHeader());
 
             for(POSOrder order : paidOrders) {
-                totalSold = totalSold.add(order.getTotallines());
+                totalSold = totalSold.add(order.getTotallines(order.getCB_PriceList_ID()));
                 totalDiscounted = totalDiscounted.add(order.getDiscount());
                 totalSurcharged = totalSurcharged.add(order.getSurcharge());
 
                 for (POSOrderLine orderLine : order.getOrderedLines()) {
                     if(orderLine.getLineStatus().equals(POSOrderLine.VOIDED))
-                        totalVoided = totalVoided.add(orderLine.getLineNetAmt());
+                        totalVoided = totalVoided.add(orderLine.getLineNetAmt(order.getCB_PriceList_ID()));
                 }
             }
 

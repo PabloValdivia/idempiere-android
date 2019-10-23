@@ -90,19 +90,29 @@ public class MProduct implements Serializable {
         this.productCategoryId = productCategoryId;
     }
 
-    public BigDecimal getProductPriceValue() {
-        ProductPrice productPrice = getProductPrice(null);
+    public BigDecimal getProductPriceValue(int pricelist_id) {
+        ProductPrice productPrice = getProductPrice(null,pricelist_id);
         return productPrice.getStdPrice();
     }
 
-    public boolean isComplimentaryAllow() {
-        ProductPrice productPrice = getProductPrice(null);
+    public BigDecimal getProductPriceValuePOS() {
+        ProductPrice productPrice = getProductPricePOS(null);
+        return productPrice.getStdPrice();
+    }
+
+    public boolean isComplimentaryAllow(int pricelist_id) {
+        ProductPrice productPrice = getProductPrice(null, pricelist_id);
         return productPrice.getPriceLimit().compareTo(BigDecimal.ZERO) == 0 || productPrice.getPriceLimit().compareTo(BigDecimal.ZERO) < 0;
     }
 
-    public ProductPrice getProductPrice(Context ctx) {
+    public ProductPrice getProductPrice(Context ctx, int pricelist_id) {
         productManager = new PosProductManagement(ctx);
-        return productManager.getProductPrice(this);
+        return productManager.getProductPrice(this, pricelist_id);
+    }
+
+    public ProductPrice getProductPricePOS(Context ctx) {
+        productManager = new PosProductManagement(ctx);
+        return productManager.getProductPricePOS(this);
     }
 
     public int getOutputDeviceId() {
@@ -129,8 +139,8 @@ public class MProduct implements Serializable {
         isSold = sold;
     }
 
-    public boolean askForPrice() {
-        ProductPrice productPrice = getProductPrice(null);
+    public boolean askForPrice(int pricelist_id) {
+        ProductPrice productPrice = getProductPrice(null, pricelist_id);
         return productPrice.getStdPrice().compareTo(BigDecimal.ZERO) == 0 && productPrice.getPriceLimit().compareTo(BigDecimal.ZERO) != 0;
     }
 

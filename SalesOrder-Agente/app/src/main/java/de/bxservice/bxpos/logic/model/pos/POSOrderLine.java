@@ -112,12 +112,12 @@ public class POSOrderLine implements Serializable {
         return lineTax;
     }
 
-    public BigDecimal getLineNetAmt() {
+    public BigDecimal getLineNetAmt(int pricelist_id) {
 
         if(isComplimentaryProduct)
             lineNetAmt = BigDecimal.ZERO;
-        else if(product != null && product.getProductPriceValue().compareTo(BigDecimal.ZERO) != 0) //If the amt was not calculated before - and is not a zero price product
-            lineNetAmt = product.getProductPriceValue().multiply(BigDecimal.valueOf(qtyOrdered));
+        else if(product != null && product.getProductPriceValue(pricelist_id).compareTo(BigDecimal.ZERO) != 0) //If the amt was not calculated before - and is not a zero price product
+            lineNetAmt = product.getProductPriceValue(pricelist_id).multiply(BigDecimal.valueOf(qtyOrdered));
 
         return lineNetAmt;
     }
@@ -126,15 +126,15 @@ public class POSOrderLine implements Serializable {
         this.lineNetAmt = lineNetAmt;
     }
 
-    public BigDecimal getPriceActual() {
+    public BigDecimal getPriceActual(int pricelist_id) {
 
         //if it is a complimentary line -> return zero
         if (isComplimentaryProduct)
             return BigDecimal.ZERO;
 
         //return unitary value to be sent to iDempiere if the product price is different than zero
-        else if (product != null && product.getProductPriceValue().compareTo(BigDecimal.ZERO) != 0)
-            return product.getProductPriceValue();
+        else if (product != null && product.getProductPriceValue(pricelist_id).compareTo(BigDecimal.ZERO) != 0)
+            return product.getProductPriceValue(pricelist_id);
 
         //if the line is not complimentary but the price is 0 -> override price
         else
@@ -146,8 +146,8 @@ public class POSOrderLine implements Serializable {
      * in an integer to be save in the database
      * @return
      */
-    public Integer getLineNetAmtInteger() {
-        return getLineNetAmt().multiply(BigDecimal.valueOf(100)).intValue(); //total * 100
+    public Integer getLineNetAmtInteger(int pricelist_id) {
+        return getLineNetAmt(pricelist_id).multiply(BigDecimal.valueOf(100)).intValue(); //total * 100
     }
 
     /**
@@ -160,10 +160,10 @@ public class POSOrderLine implements Serializable {
         lineNetAmt = BigDecimal.valueOf(doubleValue);
     }
 
-    public String getLineTotalAmt() {
+    public String getLineTotalAmt(int pricelist_id) {
 
         NumberFormat currencyFormat = PosProperties.getInstance().getCurrencyFormat();
-        return currencyFormat.format(getLineNetAmt());
+        return currencyFormat.format(getLineNetAmt(pricelist_id));
     }
 
     public POSOrder getOrder() {

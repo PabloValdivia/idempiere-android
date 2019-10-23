@@ -201,7 +201,7 @@ public class PayOrderActivity extends AppCompatActivity implements RemarkDialogF
         if (paidAmount == null)
             paidAmount = BigDecimal.ZERO;
 
-        subtotal = order.getTotallines();
+        subtotal = order.getTotallines(order.getCB_PriceList_ID());
         amountToPay = getAmountToPay();
         total = getTotal();
         changeAmount = getChange();

@@ -165,9 +165,9 @@ public class ReviewOrderFragment extends Fragment {
         currencyFormat.setMinimumFractionDigits(2);
 
         totalTextView.setText(getString(R.string.total));
-        totalAmtTextView.setText(currencyFormat.format(order.getTotallines().add(order.getSurcharge())));
+        totalAmtTextView.setText(currencyFormat.format(order.getTotallines(order.getCB_PriceList_ID()).add(order.getSurcharge())));
         subtotalTextView.setText(getString(R.string.net_label));
-        subtotalAmtTextView.setText(currencyFormat.format(order.getTotallines().subtract(order.getTotalTaxes())));
+        subtotalAmtTextView.setText(currencyFormat.format(order.getTotallines(order.getCB_PriceList_ID()).subtract(order.getTotalTaxes())));
 
         if (order.getTaxRates().size() == 1) {
             vat2TextView.setVisibility(View.GONE);

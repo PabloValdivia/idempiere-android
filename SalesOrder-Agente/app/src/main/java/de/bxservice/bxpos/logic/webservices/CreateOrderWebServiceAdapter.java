@@ -114,8 +114,13 @@ public class CreateOrderWebServiceAdapter extends AbstractWSObject {
         data.addField("DocumentNo", order.getDocumentNo());
         data.addField("IsSOTrx", "Y"); //Sales Order
         data.addField("PaymentRule", order.getPaymentRule());
-        data.addField("M_PriceList_ID", String.valueOf(defaultPosData.getDefaultPriceList()));
         data.addField("IsTaxIncluded", defaultPosData.isTaxIncluded() ? "Y" : "N");
+
+        if (order.getTable() == null && order.getCB_PriceList_ID()!=  0)
+            data.addField("M_PriceList_ID", order.getCB_PriceList_ID());
+        else
+            //   data.addField("M_PriceList_ID", String.valueOf(defaultPosData.getDefaultPriceList()));
+            data.addField("M_PriceList_ID", String.valueOf(defaultPosData.getDefaultPriceList()));
 
         if (order.getTable() != null)
             data.addField("BAY_Table_ID", String.valueOf(order.getTable().getTableID()));
@@ -137,11 +142,14 @@ public class CreateOrderWebServiceAdapter extends AbstractWSObject {
             dataLine.addField("QtyEntered", String.valueOf(orderLine.getQtyOrdered()));
 
             //Send the price to iDempiere - the price to zero for complimentary products
-            dataLine.addField("PriceEntered", String.valueOf(orderLine.getPriceActual()));
+         //   dataLine.addField("PriceEntered", String.valueOf(orderLine.getPriceActual()));
+            dataLine.addField("PriceEntered", String.valueOf(orderLine.getPriceActual(order.getCB_PriceList_ID())));
             //Send these two values to avoid iDempiere of setting the price in the beforeSave method
-            dataLine.addField("PriceActual", String.valueOf(orderLine.getPriceActual()));
-            dataLine.addField("PriceList", String.valueOf(orderLine.getProduct().getProductPriceValue()));
-
+          //  dataLine.addField("PriceActual", String.valueOf(orderLine.getPriceActual()));
+            dataLine.addField("PriceActual", String.valueOf(orderLine.getPriceActual(order.getCB_PriceList_ID())));
+            int A =order.getCB_PriceList_ID();
+            dataLine.addField("PriceList", String.valueOf(orderLine.getProduct().getProductPriceValue(order.getCB_PriceList_ID())));
+         //   dataLine.addField("PriceList", String.valueOf(orderLine.getProduct().getProductPriceValuePOS()));
             createOrderLine.setDataRow(dataLine);
 
             compositeOperation.addOperation(createOrderLine);

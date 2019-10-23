@@ -93,7 +93,7 @@ public class OverridePriceDialogFragment extends DialogFragment {
                             overridePrice = new BigDecimal(enteredPrice.getText().toString());
 
                         //If the price is lower than the price limit -> error
-                        if (overridePrice != null && overridePrice.compareTo(product.getProductPrice(getActivity()).getPriceLimit()) < 0)
+                        if (overridePrice != null && overridePrice.compareTo(product.getProductPrice(getActivity(), 0).getPriceLimit()) < 0)
                             Toast.makeText(getActivity().getBaseContext(), "Limit price violated",
                                     Toast.LENGTH_LONG).show();
                         else
@@ -125,7 +125,7 @@ public class OverridePriceDialogFragment extends DialogFragment {
                 @Override
                 public void onClick(View v)
                 {
-                    BigDecimal priceLimit = product.getProductPrice(getActivity()).getPriceLimit();
+                    BigDecimal priceLimit = product.getProductPrice(getActivity(), 0).getPriceLimit();
                     if (!TextUtils.isEmpty(enteredPrice.getText().toString())) {
                         overridePrice = new BigDecimal(enteredPrice.getText().toString());
                         //If the price is lower than the price limit -> error

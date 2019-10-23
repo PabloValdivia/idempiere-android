@@ -106,9 +106,9 @@ public class ProductMenuFragment extends Fragment {
             item = new NewOrderGridItem();
             item.setName(product.getProductKey());
             item.setKey(product.getProductKey());
-
-            if (!product.askForPrice())
-                item.setPrice(currencyFormat.format(product.getProductPriceValue()));
+int a = ((CreateOrderActivity) getActivity()).getBP_PriceList_ID();
+            if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
+                item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
             else
                 item.setPrice("");
 
@@ -154,7 +154,7 @@ public class ProductMenuFragment extends Fragment {
                 NewOrderGridItem item = (NewOrderGridItem) parent.getItemAtPosition(position);
                 MProduct product = itemProductHashMap.get(item);
 
-                if (!product.askForPrice())
+                if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
                     ((CreateOrderActivity) getActivity()).addMultipleItems(product);
 
                 return true;

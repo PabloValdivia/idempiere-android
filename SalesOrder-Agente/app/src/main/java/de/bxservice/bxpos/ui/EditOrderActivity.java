@@ -53,6 +53,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import de.bxservice.bxpos.logic.model.idempiere.CBPartner;
 import de.bxservice.bxpos.logic.model.idempiere.DefaultPosData;
 import de.bxservice.bxpos.logic.model.idempiere.Table;
 import de.bxservice.bxpos.logic.model.pos.POSOrder;
@@ -107,6 +108,7 @@ public class EditOrderActivity extends AppCompatActivity implements GuestNumberD
 
     private View mainView;
     private POSOrder order;
+    private CBPartner param_bpartner = null;
     private String   caller; //Indicates the activity that called it
     private static HashMap<FloatingActionButton, Boolean> fabVisible = new HashMap<>();
 
@@ -776,11 +778,11 @@ public class EditOrderActivity extends AppCompatActivity implements GuestNumberD
 
         switch (status) {
             case POSOrderLine.ORDERING:
-                return getString(R.string.subtotal_value, currencyFormat.format(order.getTotalOrderinglines()));
+                return getString(R.string.subtotal_value, currencyFormat.format(order.getTotalOrderinglines(order.getCB_PriceList_ID())));
             case POSOrderLine.ORDERED:
-                return getString(R.string.total_value, currencyFormat.format(order.getTotallines()));
+                return getString(R.string.total_value, currencyFormat.format(order.getTotallines(order.getCB_PriceList_ID())));
             default:
-                return getString(R.string.subtotal_value, currencyFormat.format(order.getTotalOrderinglines()));
+                return getString(R.string.subtotal_value, currencyFormat.format(order.getTotalOrderinglines(order.getCB_PriceList_ID())));
         }
 
     }
@@ -1002,7 +1004,7 @@ public class EditOrderActivity extends AppCompatActivity implements GuestNumberD
                         if(selectedItemPositions != null && !selectedItemPositions.isEmpty()) {
                             for(int i = 0; i< selectedItemPositions.size(); i++) {
                                 POSOrderLine orderLine = order.getOrderingLines().get(selectedItemPositions.get(i));
-                                if (orderLine.getProduct().isComplimentaryAllow()) {
+                                if (orderLine.getProduct().isComplimentaryAllow(order.getCB_PriceList_ID())) {
                                     orderLine.setComplimentaryProduct(true);
                                     orderLine.updateLine(getBaseContext());
                                 }

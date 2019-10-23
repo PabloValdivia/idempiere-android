@@ -59,11 +59,12 @@ public class PosOrderHelper extends PosObjectHelper {
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_CREATED_AT, Long.parseLong(getCurrentDate()));
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_DOCUMENT_NO, order.getDocumentNo());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID, order.getCBPartner_ID());
+        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID, order.getCB_PriceList_ID());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_CREATED_BY, userId);
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_ORDER_STATUS, order.getStatus());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_GUESTS, order.getGuestNumber());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_REMARK, order.getOrderRemark());
-        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_TOTALLINES, order.getTotallinesInteger());
+        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_TOTALLINES, order.getTotallinesInteger(order.getCB_PriceList_ID()));
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_PAYMENT_RULE, order.getPaymentRule());
 
         if(order.getTable() != null)
@@ -105,6 +106,7 @@ public class PosOrderHelper extends PosObjectHelper {
         order.setTable(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_TABLE_ID)));
         order.setDocumentNo(c.getString(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_DOCUMENT_NO)));
         order.setCBPartner_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID)));
+        order.setCB_PriceList_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID)));
 
         PosOrderLineHelper orderLineHelper = new PosOrderLineHelper(mContext);
         order.setOrderingLines(orderLineHelper.getAllOrderingLines(order));
@@ -125,9 +127,10 @@ public class PosOrderHelper extends PosObjectHelper {
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_ORDER_STATUS, order.getStatus());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_DOCUMENT_NO, order.getDocumentNo());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID, order.getCBPartner_ID());
+        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID, order.getCB_PriceList_ID());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_GUESTS, order.getGuestNumber());
         values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_REMARK, order.getOrderRemark());
-        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_TOTALLINES, order.getTotallinesInteger());
+        values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_TOTALLINES, order.getTotallinesInteger(order.getCB_PriceList_ID()));
         //These values are only updated when paid
         if (order.getStatus().equals(POSOrder.COMPLETE_STATUS)) {
             values.put(PosOrderContract.POSOrderDB.COLUMN_NAME_SURCHARGE, order.getSurchargeInteger());
@@ -184,6 +187,7 @@ public class PosOrderHelper extends PosObjectHelper {
         order.setPaymentRule(c.getString(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_PAYMENT_RULE)));
         order.setDocumentNo(c.getString(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_DOCUMENT_NO)));
         order.setCBPartner_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID)));
+        order.setCB_PriceList_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID)));
 
         PosOrderLineHelper orderLineHelper = new PosOrderLineHelper(mContext);
         order.setOrderingLines(orderLineHelper.getAllOrderingLines(order));
@@ -275,6 +279,7 @@ public class PosOrderHelper extends PosObjectHelper {
                 order.setPaymentRule(c.getString(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_PAYMENT_RULE)));
                 order.setDocumentNo(c.getString(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_DOCUMENT_NO)));
                 order.setCBPartner_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_CPARTNER_ID)));
+                order.setCB_PriceList_ID(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_PRICELIST_ID)));
                 if(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_TABLE_ID) != -1 &&
                         c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_TABLE_ID)) != 0)
                     order.setTable(c.getInt(c.getColumnIndex(PosOrderContract.POSOrderDB.COLUMN_NAME_TABLE_ID)));

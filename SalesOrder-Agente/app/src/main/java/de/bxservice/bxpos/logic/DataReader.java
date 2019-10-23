@@ -338,8 +338,9 @@ public class DataReader {
 
         //Relation between products and prices - the list has to be the same long. One price per every product
         if( productPriceList != null && !productPriceList.isEmpty() &&
-                productList != null && !productList.isEmpty() &&
-                productPriceList.size() == productList.size() ){
+                productList != null && !productList.isEmpty() ) {
+            // commento questa parte che accetta solo un prodotto con un listino prezzi
+          //  && productPriceList.size() == productList.size() ){
 
             int productId;
             int priceProductId;

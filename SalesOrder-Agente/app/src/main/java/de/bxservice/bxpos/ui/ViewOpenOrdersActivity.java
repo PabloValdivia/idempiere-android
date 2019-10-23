@@ -80,7 +80,7 @@ public class ViewOpenOrdersActivity extends AppCompatActivity {
             item.setOrderNo(getString(R.string.order) + ": " + order.getDocumentNo());
             item.setCBpartner(order.getCBPartner_ID());
 
-            totalLines = order.getTotallines();
+            totalLines = order.getTotallines(order.getCB_PriceList_ID());
             item.setPrice(getString(R.string.total) + ": " + currencyFormat.format(totalLines));
 
             String table;

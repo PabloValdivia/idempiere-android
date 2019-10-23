@@ -167,7 +167,7 @@ public class CPCLPrinter extends AbstractPOSPrinter {
         if(!defaultPosData.isCombineReceiptItems()) {
             for(POSOrderLine line : order.getOrderedLines()) {
                 ticket.append(line.getQtyOrdered() + "  " + line.getProduct().getProductName() + "            "+
-                        currencyFormat.format(line.getLineNetAmt()) + "\r\n");
+                        currencyFormat.format(line.getLineNetAmt(order.getCB_PriceList_ID())) + "\r\n");
                 if(line.getProductRemark() != null && !line.getProductRemark().isEmpty())
                     ticket.append("    " + line.getProductRemark() + "\r\n");
             }
@@ -191,7 +191,7 @@ public class CPCLPrinter extends AbstractPOSPrinter {
 
         footerSection.append("T 7 1 25 " + posY + " %s\r\n"); //Amount label
         footerSection.append("RIGHT\r\n");
-        footerSection.append("T 7 1 400 " + posY + " " + currencyFormat.format(order.getTotallines()) +"\r\n"); //Amount of the lines
+        footerSection.append("T 7 1 400 " + posY + " " + currencyFormat.format(order.getTotallines(order.getCB_PriceList_ID())) +"\r\n"); //Amount of the lines
         posY = posY + 40;
 
         footerSection.append("LEFT\r\n");
@@ -203,7 +203,7 @@ public class CPCLPrinter extends AbstractPOSPrinter {
         footerSection.append("LEFT\r\n");
         footerSection.append("T 7 1 25 " + posY + " %s\r\n"); //Total label
         footerSection.append("RIGHT\r\n");
-        footerSection.append("T 7 1 400 " + posY + " " + currencyFormat.format(order.getTotallines().add(order.getSurcharge())) +"\r\n"); //Total amount
+        footerSection.append("T 7 1 400 " + posY + " " + currencyFormat.format(order.getTotallines(order.getCB_PriceList_ID()).add(order.getSurcharge())) +"\r\n"); //Total amount
 
         posY = posY + 40;
         footerSection.append("LEFT\r\n");
