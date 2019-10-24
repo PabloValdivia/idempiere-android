@@ -1,4 +1,4 @@
-#Thu Oct 24 10:41:58 CEST 2019
+#Thu Oct 24 10:53:02 CEST 2019
 file.2=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c8f54535bb9857b6be024eab49aff2d1f7c4c09/classes.dex
 base.2=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c8f54535bb9857b6be024eab49aff2d1f7c4c09
 file.1=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_38c6c14a7b04e60003c4dafc702c35e32b30a27f/classes.dex

@@ -114,9 +114,12 @@ public class GridTableViewAdapter extends ArrayAdapter<Table> {
 
             } catch(Exception e) {}
 
-            int BPartner_ID = POSOrder.getOpenOrders(mContext).get(position).getCBPartner_ID();
-            String BPartnerName = CBPartner.getBPartnerInfo(mContext, BPartner_ID).get(0).getBPartnerName(); //recupero sempre il primo valore, e unico tra l'altro
+            String BPartnerName="";
 
+            if (POSOrder.getOpenOrders(mContext).size() > 0) {
+                int BPartner_ID = POSOrder.getOpenOrders(mContext).get(position).getCBPartner_ID();
+                BPartnerName = CBPartner.getBPartnerInfo(mContext, BPartner_ID).get(0).getBPartnerName(); //recupero sempre il primo valore, e unico tra l'altro
+            }
          //   holder.serverName.setText(mGridData.get(position).getServerName());
             holder.serverName.setText(BPartnerName);
             holder.orderTime.setText(occupiedHour);
