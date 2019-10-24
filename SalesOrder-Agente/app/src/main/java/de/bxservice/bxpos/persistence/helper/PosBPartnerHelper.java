@@ -118,7 +118,7 @@ public class PosBPartnerHelper extends PosObjectHelper{
                 CBPartner bpartner = new CBPartner();
                 bpartner.setBPartnerID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_BPARTNER_ID)));
                 bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_NAME)));
-                bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_VALUE)));
+                bpartner.setBPartnerValue(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_VALUE)));
                 bpartner.setPriceListID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_PRICE_LIST_ID)));
 
                 Boolean flag = (c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_IS_ACTIVE)) != 0);
@@ -157,7 +157,7 @@ public class PosBPartnerHelper extends PosObjectHelper{
                 CBPartner bpartner = new CBPartner();
                 bpartner.setBPartnerID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_BPARTNER_ID)));
                 bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_NAME)));
-                bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_VALUE)));
+                bpartner.setBPartnerValue(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_VALUE)));
                 bpartner.setPriceListID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_PRICE_LIST_ID)));
 
                 Boolean flag = (c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_IS_ACTIVE)) != 0);

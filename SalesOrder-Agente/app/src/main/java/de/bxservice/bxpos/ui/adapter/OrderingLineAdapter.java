@@ -74,7 +74,7 @@ public class OrderingLineAdapter extends RecyclerView.Adapter<OrderingLineAdapte
 
         public void bindOrderLine(POSOrderLine orderLine) {
             txtQty.setText(String.valueOf(orderLine.getQtyOrdered()));
-            txtProductName.setText(orderLine.getProduct().getProductKey());
+            txtProductName.setText(orderLine.getProduct().getProductName());
             txtPrice.setText(orderLine.getLineTotalAmt(orderLine.getOrder().getCB_PriceList_ID()));
         }
 

@@ -98,10 +98,10 @@ public class BPartnerMenuFragment extends Fragment {
 
         NewOrderGridItem item;
 
-        for(CBPartner product :  CBPartner.getbPartners(getContext())) {
+        for(CBPartner bpartner :  CBPartner.getbPartners(getContext())) {
             item = new NewOrderGridItem();
-            item.setName(product.getBPartnerName());
-            item.setKey(product.getBPartnerValue());
+            item.setName(bpartner.getBPartnerName());
+            item.setKey(bpartner.getBPartnerValue());
 
    /*         if (!product.askForPrice())
                 item.setPrice(currencyFormat.format(product.getProductPriceValue()));
@@ -116,7 +116,7 @@ public class BPartnerMenuFragment extends Fragment {
                 item.setQty("");
 
             mGridData.add(item);
-            itemProductHashMap.put(item,product);
+            itemProductHashMap.put(item,bpartner);
         }
 
         grid.setGravity(Gravity.CENTER_HORIZONTAL);
