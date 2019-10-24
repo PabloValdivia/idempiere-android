@@ -104,23 +104,26 @@ public class ProductMenuFragment extends Fragment {
         int qtyOrdered;
         for(MProduct product : productCategory.getProducts()) {
             item = new NewOrderGridItem();
-            item.setName(product.getProductKey());
-            item.setKey(product.getProductKey());
 
-            if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
-                item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
-            else
-                item.setPrice("");
+            if (product.getProductPrice(getContext(),((CreateOrderActivity) getActivity()).getBP_PriceList_ID() ) != null) {
+                item.setName(product.getProductKey());
+                item.setKey(product.getProductKey());
 
-            //When you navigate through the tabs it paints again everything - this lets the number stay
-            qtyOrdered = ((CreateOrderActivity) getActivity()).getProductQtyOrdered(product);
-            if(qtyOrdered != 0)
-                item.setQty("x"+Integer.toString(qtyOrdered));
-            else
-                item.setQty("");
+                if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
+                    item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
+                else
+                    item.setPrice("");
 
-            mGridData.add(item);
-            itemProductHashMap.put(item,product);
+                //When you navigate through the tabs it paints again everything - this lets the number stay
+                qtyOrdered = ((CreateOrderActivity) getActivity()).getProductQtyOrdered(product);
+                if (qtyOrdered != 0)
+                    item.setQty("x" + Integer.toString(qtyOrdered));
+                else
+                    item.setQty("");
+
+                mGridData.add(item);
+                itemProductHashMap.put(item, product);
+            }
         }
 
         grid.setGravity(Gravity.CENTER_HORIZONTAL);

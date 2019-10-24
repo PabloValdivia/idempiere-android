@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 24 10:53:03 CEST 2019
+#Thu Oct 24 11:35:49 CEST 2019
 210.set=ANDROID_RESOURCE
 282.file=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/resources-debug.ap_/res/layout/search_items.xml
 14.set=ANDROID_RESOURCE

@@ -61,6 +61,7 @@ import java.util.HashMap;
 import de.bxservice.bxpos.R;
 import de.bxservice.bxpos.logic.model.idempiere.CBPartner;
 import de.bxservice.bxpos.logic.model.idempiere.DefaultPosData;
+import de.bxservice.bxpos.logic.model.idempiere.ProductPrice;
 import de.bxservice.bxpos.logic.model.pos.NewOrderGridItem;
 import de.bxservice.bxpos.logic.model.pos.POSOrder;
 import de.bxservice.bxpos.logic.model.idempiere.MProduct;
@@ -226,24 +227,29 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
         NewOrderGridItem gridItem;
         itemProductHashMap = new HashMap<>();
 
+
         for (MProduct product : MProduct.getSoldProducts(getBaseContext())) {
             gridItem = new NewOrderGridItem();
 
-            //If the key and the name are the same, don't repeat
-            if (product.getProductName().equalsIgnoreCase(product.getProductKey()))
-                gridItem.setName(product.getProductName());
-            else
-                gridItem.setName(product.getProductKey() + " " + product.getProductName());
+      //      if (product.getProductPriceValue(BP_PriceList_ID)!=null) {
+            if (product.getProductPrice(getBaseContext(),BP_PriceList_ID ) != null) {
+                //If the key and the name are the same, don't repeat
+                if (product.getProductName().equalsIgnoreCase(product.getProductKey()))
+                    gridItem.setName(product.getProductName());
+                else
+                    gridItem.setName(product.getProductKey() + " " + product.getProductName());
 
-            if (!product.askForPrice(BP_PriceList_ID))
-                gridItem.setPrice(currencyFormat.format(product.getProductPriceValue(BP_PriceList_ID)));
-            else
-                gridItem.setPrice("");
+                if (!product.askForPrice(BP_PriceList_ID))
+                    gridItem.setPrice(currencyFormat.format(product.getProductPriceValue(BP_PriceList_ID)));
+                else
+                    gridItem.setPrice("");
 
-            gridItem.setKey(product.getProductKey());
+                gridItem.setKey(product.getProductKey());
 
-            items.add(gridItem);
-            itemProductHashMap.put(gridItem, product);
+                items.add(gridItem);
+                itemProductHashMap.put(gridItem, product);
+            }
+
         }
     }
 
