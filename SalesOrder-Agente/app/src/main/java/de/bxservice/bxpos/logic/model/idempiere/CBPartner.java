@@ -121,4 +121,9 @@ public class CBPartner implements Serializable {
         BPartnerManagement dataProvider = new BPartnerManagement(ctx);
         return dataProvider.getBPartners();
     }
+
+    public static List<CBPartner> getBPartnerInfo(Context ctx, int BPartner_ID) {
+        BPartnerManagement dataProvider = new BPartnerManagement(ctx);
+        return dataProvider.getBPartnerInfo(BPartner_ID);
+    }
 }

@@ -44,7 +44,10 @@ import java.util.Date;
 import java.util.List;
 
 import de.bxservice.bxpos.R;
+import de.bxservice.bxpos.logic.model.idempiere.CBPartner;
+import de.bxservice.bxpos.logic.model.idempiere.DefaultPosData;
 import de.bxservice.bxpos.logic.model.idempiere.Table;
+import de.bxservice.bxpos.logic.model.pos.POSOrder;
 
 /**
  * Created by Diego Ruiz on 18/11/15.
@@ -54,6 +57,8 @@ public class GridTableViewAdapter extends ArrayAdapter<Table> {
     private Context mContext;
     private int layoutResourceId;
     private List<Table> mGridData = new ArrayList<>();
+ //   private List<POSOrder> mDataset;
+ //   private POSOrder order;
 
     public GridTableViewAdapter(Context mContext, int layoutResourceId, ArrayList<Table> mGridData) {
         super(mContext, layoutResourceId, mGridData);
@@ -108,8 +113,14 @@ public class GridTableViewAdapter extends ArrayAdapter<Table> {
                 occupiedHour = dateFormat.format(date);
 
             } catch(Exception e) {}
-            holder.serverName.setText(mGridData.get(position).getServerName());
+
+            int BPartner_ID = POSOrder.getOpenOrders(mContext).get(position).getCBPartner_ID();
+            String BPartnerName = CBPartner.getBPartnerInfo(mContext, BPartner_ID).get(0).getBPartnerName(); //recupero sempre il primo valore, e unico tra l'altro
+
+         //   holder.serverName.setText(mGridData.get(position).getServerName());
+            holder.serverName.setText(BPartnerName);
             holder.orderTime.setText(occupiedHour);
+            POSOrder.getOpenOrders(mContext);
 
             //If the table is busy center relative to linear layout
             if (linear != null) {
@@ -140,6 +151,7 @@ public class GridTableViewAdapter extends ArrayAdapter<Table> {
 
         return row;
     }
+
 
     static class ViewHolder {
         TextView serverName;

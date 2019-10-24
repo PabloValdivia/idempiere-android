@@ -578,6 +578,11 @@ public class DataMapper implements Serializable {
         return bpartnerHelper.getBPartners();
     }
 
+    public List<CBPartner> getBPartnerInfo(int BPartner_ID) {
+        PosBPartnerHelper bpartnerHelper = new PosBPartnerHelper(mContext);
+        return bpartnerHelper.getBPartnerInfo(BPartner_ID);
+    }
+
     public List<POSOrder> getOpenOrders() {
         PosOrderHelper orderHelper = new PosOrderHelper(mContext);
         return orderHelper.getOpenOrders();

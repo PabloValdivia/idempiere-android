@@ -40,7 +40,7 @@ public class PosBPartnerHelper extends PosObjectHelper{
     }
 
     /*
-     * get single product
+     * get single BPartner
      */
     public CBPartner getBPartner(long bpartner_id) {
         SQLiteDatabase db = getReadableDatabase();
@@ -96,7 +96,7 @@ public class PosBPartnerHelper extends PosObjectHelper{
 
 
     /**
-     * Get all products that are sold in the POS
+     * Get all BP
      * @return
      */
     public ArrayList<CBPartner> getBPartners() {
@@ -111,6 +111,45 @@ public class PosBPartnerHelper extends PosObjectHelper{
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                CBPartner bpartner = new CBPartner();
+                bpartner.setBPartnerID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_BPARTNER_ID)));
+                bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_NAME)));
+                bpartner.setBPartnerName(c.getString(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_VALUE)));
+                bpartner.setPriceListID(c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_NAME_PRICE_LIST_ID)));
+
+                Boolean flag = (c.getInt(c.getColumnIndex(BPartnerContract.BPartnerDB.COLUMN_IS_ACTIVE)) != 0);
+                bpartner.setActive(flag);
+
+                cbPartners.add(bpartner);
+            } while (c.moveToNext());
+        }
+
+        if (c != null)
+            c.close();
+
+        return cbPartners;
+    }
+
+
+
+
+    public ArrayList<CBPartner> getBPartnerInfo(int BPartner_ID) {
+        ArrayList<CBPartner> cbPartners = new ArrayList<>();
+
+        String selectQuery = "SELECT  * FROM " + Tables.TABLE_BPARTNER +
+                " WHERE " + BPartnerContract.BPartnerDB.COLUMN_IS_ACTIVE + " = 1" +
+                " AND " + BPartnerContract.BPartnerDB.COLUMN_NAME_BPARTNER_ID + " = ?" +
+                " ORDER BY " + BPartnerContract.BPartnerDB.COLUMN_NAME_NAME;
+
+
+        Log.d(LOG_TAG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, new String[] { String.valueOf(BPartner_ID) });
 
         // looping through all rows and adding to list
         if (c.moveToFirst()) {

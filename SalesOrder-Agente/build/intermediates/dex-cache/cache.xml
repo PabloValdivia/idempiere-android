@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="02fdd41ccb5cf228411c57048f696d4fc468c726">
+        sha1="29b8bf265c81f8230b19d8ea2dd5987e361998a6">
         <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a5dcdbdaafe13321461c22db5cc0be4d0447e21/classes.dex" />
     </item>
     <item

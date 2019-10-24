@@ -47,4 +47,8 @@ public class BPartnerManagement extends AbstractObjectManagement {
         return dataMapper.getBPartners();
     }
 
+    public List<CBPartner> getBPartnerInfo(int BPartner_ID) {
+        return dataMapper.getBPartnerInfo(BPartner_ID);
+    }
+
 }

@@ -1,4 +1,4 @@
-#Wed Oct 23 16:39:37 CEST 2019
+#Thu Oct 24 10:41:58 CEST 2019
 base.0=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
 renamed.0=classes.dex
 file.0=/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex
