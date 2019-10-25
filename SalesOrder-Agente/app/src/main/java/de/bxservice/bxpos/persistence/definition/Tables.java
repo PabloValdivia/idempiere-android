@@ -35,6 +35,7 @@ import de.bxservice.bxpos.persistence.dbcontract.PosOrderLineContract;
 import de.bxservice.bxpos.persistence.dbcontract.PosPaymentContract;
 import de.bxservice.bxpos.persistence.dbcontract.PosTenderTypeContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductCategoryContract;
+import de.bxservice.bxpos.persistence.dbcontract.ProductCategoryinBPContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductPriceContract;
 import de.bxservice.bxpos.persistence.dbcontract.SessionPreferenceContract;
@@ -71,6 +72,7 @@ public interface Tables {
     //Product management tables
     String TABLE_PRODUCT          = ProductContract.ProductDB.TABLE_NAME;
     String TABLE_PRODUCT_CATEGORY = ProductCategoryContract.ProductCategoryDB.TABLE_NAME;
+    String TABLE_PRODUCT_CATEGORYINBPARTNER = ProductCategoryinBPContract.ProductCategoryinBP.TABLE_NAME;
     String TABLE_PRODUCT_PRICE    = ProductPriceContract.ProductPriceDB.TABLE_NAME;
 
     //BPartner management tables

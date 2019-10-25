@@ -31,6 +31,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.util.Log;
 
+import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.persistence.dbcontract.BPartnerContract;
 import de.bxservice.bxpos.persistence.dbcontract.DefaultPosDataContract;
 import de.bxservice.bxpos.persistence.dbcontract.GroupTableContract;
@@ -42,6 +43,7 @@ import de.bxservice.bxpos.persistence.dbcontract.PosOrderLineContract;
 import de.bxservice.bxpos.persistence.dbcontract.PosPaymentContract;
 import de.bxservice.bxpos.persistence.dbcontract.PosTenderTypeContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductCategoryContract;
+import de.bxservice.bxpos.persistence.dbcontract.ProductCategoryinBPContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductContract;
 import de.bxservice.bxpos.persistence.dbcontract.ProductPriceContract;
 import de.bxservice.bxpos.persistence.dbcontract.SessionPreferenceContract;
@@ -261,6 +263,18 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
                     ", " +
                     ProductCategoryContract.ProductCategoryDB.COLUMN_OUTPUT_DEVICE_ID + " INTEGER REFERENCES "
                     + Tables.TABLE_OUTPUT_DEVICE + "(" + OutputDeviceContract.OutputDeviceDB.COLUMN_NAME_OUTPUT_DEVICE_ID + ") " +  //FK to the output device
+                    ")";
+
+    private static final String CREATE_PRODUCT_CATEGORY_IN_BPARTNER_TABLE =
+            "CREATE TABLE " + Tables.TABLE_PRODUCT_CATEGORYINBPARTNER +
+                    "(" +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_BPARTNER_ID + " INTEGER PRIMARY KEY" +
+                    ", " +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_PRODUCT_CATEGORY_ID + " INTEGER NOT NULL" +
+                    ", " +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_CATEGORYNAME + " VARCHAR(64) NOT NULL" +
+                    ", " +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_PRODUCT_ID + " INTEGER NOT NULL" +
                     ")";
 
     private static final String CREATE_PRODUCT_PRICE_TABLE =
@@ -604,6 +618,7 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TAX_TABLE);
         db.execSQL(CREATE_BPARTNER_TABLE);
         db.execSQL(CREATE_PRODUCT_CATEGORY_TABLE);
+        db.execSQL(CREATE_PRODUCT_CATEGORY_IN_BPARTNER_TABLE);
         db.execSQL(CREATE_PRODUCT_TABLE);
         db.execSQL(CREATE_PRODUCT_PRICE_TABLE);
         db.execSQL(CREATE_POSORDER_TABLE);

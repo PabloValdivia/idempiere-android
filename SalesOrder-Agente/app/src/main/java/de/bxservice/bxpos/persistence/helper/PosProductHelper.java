@@ -34,6 +34,7 @@ import java.util.ArrayList;
 
 import de.bxservice.bxpos.logic.model.idempiere.MProduct;
 import de.bxservice.bxpos.logic.model.idempiere.ProductCategory;
+import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.persistence.dbcontract.ProductContract;
 import de.bxservice.bxpos.persistence.definition.Tables;
 
@@ -144,6 +145,52 @@ public class PosProductHelper extends PosObjectHelper {
      * @return
      */
     public ArrayList<MProduct> getAllProducts(ProductCategory productCategory) {
+        ArrayList<MProduct> products = new ArrayList<>();
+
+        String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT + " product " +
+                " WHERE product." + ProductContract.ProductDB.COLUMN_NAME_PRODUCT_CATEGORY_ID
+                + " = ? AND product." + ProductContract.ProductDB.COLUMN_IS_ACTIVE + " = 1"
+                + " ORDER BY " + ProductContract.ProductDB.COLUMN_NAME_VALUE;
+
+        Log.d(LOG_TAG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, new String[] {String.valueOf(productCategory.getProductCategoryID())});
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                MProduct product = new MProduct();
+                product.setProductID(c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_PRODUCT_ID)));
+                product.setProductCategoryId(c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_PRODUCT_CATEGORY_ID)));
+                product.setProductName(c.getString(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_NAME)));
+                product.setProductKey(c.getString(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_VALUE)));
+                product.setOutputDeviceId(c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_OUTPUT_DEVICE_ID)));
+                product.setTaxCategoryID(c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_TAX_CATEGORY_ID)));
+
+                Boolean flag = (c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_IS_ACTIVE)) != 0);
+                product.setActive(flag);
+
+                flag = (c.getInt(c.getColumnIndex(ProductContract.ProductDB.COLUMN_NAME_IS_SOLD)) != 0);
+                product.setSold(flag);
+
+                products.add(product);
+            } while (c.moveToNext());
+        }
+
+        if (c != null)
+            c.close();
+
+        return products;
+    }
+
+/*
+    /**
+     * Get products from a product category
+     * @param productCategory
+     * @return
+     */
+    public ArrayList<MProduct> getAllProductsinBP (ProductCategoryinBusinessPartner productCategory) {
         ArrayList<MProduct> products = new ArrayList<>();
 
         String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT + " product " +

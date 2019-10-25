@@ -36,6 +36,7 @@ import de.bxservice.bxpos.logic.model.idempiere.CBPartner;
 import de.bxservice.bxpos.logic.model.idempiere.DefaultPosData;
 import de.bxservice.bxpos.logic.model.idempiere.MProduct;
 import de.bxservice.bxpos.logic.model.idempiere.PosTenderType;
+import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.logic.model.idempiere.RestaurantInfo;
 import de.bxservice.bxpos.logic.model.idempiere.ProductCategory;
 import de.bxservice.bxpos.logic.model.idempiere.ProductPrice;
@@ -67,6 +68,7 @@ import de.bxservice.bxpos.persistence.helper.PosTaxCategoryHelper;
 import de.bxservice.bxpos.persistence.helper.PosTaxHelper;
 import de.bxservice.bxpos.persistence.helper.PosTenderTypeHelper;
 import de.bxservice.bxpos.persistence.helper.PosUserHelper;
+import de.bxservice.bxpos.persistence.helper.ProductCategoryinBPHelper;
 
 /**
  * This class is used to map the data into the database
@@ -548,6 +550,12 @@ public class DataMapper implements Serializable {
         return productCategoryHelper.getProductCategory(id);
     }
 
+    public ProductCategoryinBusinessPartner getProductCategoryinBPartner(long id) {
+        ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
+        return productCategoryinBPHelper.getProductCategoryinBP(id);
+    }
+
+
     /**
      * Return product if exist
      * @param id
@@ -566,6 +574,11 @@ public class DataMapper implements Serializable {
     public List<ProductCategory> getAllCategories() {
         PosProductCategoryHelper productCategoryHelper = new PosProductCategoryHelper(mContext);
         return productCategoryHelper.getAllProductCategories();
+    }
+
+    public List<ProductCategoryinBusinessPartner> getAllCategoriesinBP() {
+        ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
+        return productCategoryinBPHelper.getAllProductCategories();
     }
 
     public List<MProduct> getSoldProducts() {

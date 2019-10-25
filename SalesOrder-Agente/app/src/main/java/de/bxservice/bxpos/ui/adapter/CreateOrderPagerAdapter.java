@@ -66,6 +66,7 @@ public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
 
         return (int) dataProvider.getTotalCategories();
+      //  return 2;
     }
 
     @Override

@@ -103,9 +103,9 @@ public class ProductMenuFragment extends Fragment {
         NewOrderGridItem item;
         int qtyOrdered;
         for(MProduct product : productCategory.getProducts()) {
-            item = new NewOrderGridItem();
 
             if (product.getProductPrice(getContext(),((CreateOrderActivity) getActivity()).getBP_PriceList_ID() ) != null) {
+                item = new NewOrderGridItem();
                 item.setName(product.getProductName());
                 item.setKey(product.getProductKey());
 

@@ -117,8 +117,11 @@ public class PosProductCategoryHelper extends PosObjectHelper {
     public List<ProductCategory> getAllProductCategories() {
         List<ProductCategory> productCategories = new ArrayList<>();
         String selectQuery = "SELECT  * FROM " + Tables.TABLE_PRODUCT_CATEGORY;
+     //           " WHERE "+ ProductCategoryContract.ProductCategoryDB.COLUMN_NAME_PRODUCT_CATEGORY_ID + " = 1000000" +
+      //          " OR "+ ProductCategoryContract.ProductCategoryDB.COLUMN_NAME_PRODUCT_CATEGORY_ID + " = 1000068";
 
-        Log.d(LOG_TAG, selectQuery);
+
+                Log.d(LOG_TAG, selectQuery);
 
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery(selectQuery, null);
