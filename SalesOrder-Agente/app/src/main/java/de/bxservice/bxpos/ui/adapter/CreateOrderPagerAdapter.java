@@ -50,11 +50,10 @@ public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
  //   private PosProductCategoryManagement dataProvider;
     private List<Fragment> foodFragments = new ArrayList<>();
 
-    public CreateOrderPagerAdapter(FragmentManager fm, Context context, int bpartner_ID, int NumOfTabs) {
+    public CreateOrderPagerAdapter(FragmentManager fm, Context context, int bpartner_ID) {
         super(fm);
         mContext = context;
         BPartner_ID=bpartner_ID;
-        this.NumOfTabs=NumOfTabs;
         dataProvider = new ProductCategoryinBusinessPartnerManagement(mContext);
     }
 

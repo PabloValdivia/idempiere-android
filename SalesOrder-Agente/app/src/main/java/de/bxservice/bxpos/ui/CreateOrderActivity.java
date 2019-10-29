@@ -152,7 +152,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mCreateOrderPagerAdapter = new CreateOrderPagerAdapter(getSupportFragmentManager(), getBaseContext(), BPartner_ID, 10);
+        mCreateOrderPagerAdapter = new CreateOrderPagerAdapter(getSupportFragmentManager(), getBaseContext(), BPartner_ID);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.createOrderContainer);
@@ -193,7 +193,6 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
 
         tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         tabs.setViewPager(mViewPager);
-        invisibleTabs();
 
 
         sendActionButton = (FloatingActionButton) findViewById(R.id.fab);
@@ -341,11 +340,6 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
      * - Number of guests
      */
 
-    public void invisibleTabs(){
-
-    //    ((ViewGroup) tabs.getChildAt(0)).getChildAt(0).setVisibility(View.GONE);
-
-    }
 
     private void getExtras() {
         Bundle extras = getIntent().getExtras();
@@ -370,6 +364,7 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
                 posOrder = (POSOrder) getIntent().getSerializableExtra(EditOrderActivity.EXTRA_ORDER);
                 selectedTable = posOrder.getTable();
                 numberOfGuests = posOrder.getGuestNumber();
+                BPartner_ID = posOrder.getCBPartner_ID();
                 BP_PriceList_ID = posOrder.getCB_PriceList_ID();
             }
         }
