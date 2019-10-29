@@ -12,6 +12,7 @@ public class ProductCategoryinBPContract {
     /* Inner class that defines the table contents */
     public static abstract class ProductCategoryinBP implements BaseColumns {
         public static final String TABLE_NAME = "productcategoryinBP";
+        public static final String COLUMN_NAME_PRODUCT_CATEGORYINBPARTNER_ID ="productcategoryinbpid";
         public static final String COLUMN_NAME_BPARTNER_ID = "bpartnerid";
         public static final String COLUMN_NAME_PRODUCT_CATEGORY_ID = "productcategoryid";
         public static final String COLUMN_NAME_CATEGORYNAME = "categoryname";

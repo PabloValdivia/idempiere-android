@@ -105,6 +105,8 @@ public class DataMapper implements Serializable {
             success = createTableGroup((TableGroup) object);
         else if(object instanceof ProductCategory)
             success = createProductCategory((ProductCategory) object);
+        else if(object instanceof ProductCategoryinBusinessPartner)
+            success = createProductCategoryinBP((ProductCategoryinBusinessPartner) object);
         else if(object instanceof ProductPrice)
             success = createProductPrice((ProductPrice) object);
         else if(object instanceof MProduct)
@@ -159,6 +161,8 @@ public class DataMapper implements Serializable {
             success = updateTableGroup((TableGroup) object);
         else if(object instanceof ProductCategory)
             success = updateProductCategory((ProductCategory) object);
+        else if(object instanceof ProductCategoryinBusinessPartner)
+            success = updateProductCategoryinBP((ProductCategoryinBusinessPartner) object);
         else if(object instanceof ProductPrice)
             success = updateProductPrice((ProductPrice) object);
         else if(object instanceof MProduct)
@@ -356,6 +360,32 @@ public class DataMapper implements Serializable {
         return true;
     }
 
+    private boolean createProductCategoryinBP(ProductCategoryinBusinessPartner productCategoryinBP) {
+
+        ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
+
+        if (productCategoryinBPHelper.createProductCategoryinBP(productCategoryinBP) == -1) {
+            Log.e(LOG_TAG, "Cannot create category in BP " + productCategoryinBP.getName());
+            return false;
+        }
+        Log.i(LOG_TAG, productCategoryinBP.getName() + " created");
+        return true;
+    }
+
+    private boolean updateProductCategoryinBP(ProductCategoryinBusinessPartner data) {
+        ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
+
+        if (productCategoryinBPHelper.updateProductCategoryinBP(data) != -1) {
+            Log.i(LOG_TAG, "Product category updated");
+        }
+        else {
+            Log.e(LOG_TAG, "Cannot update category");
+            return false;
+        }
+
+        return true;
+    }
+
     private boolean createProductPrice(ProductPrice productPrice) {
 
         PosProductPriceHelper productPriceHelper = new PosProductPriceHelper(mContext);
@@ -540,6 +570,19 @@ public class DataMapper implements Serializable {
         return numRows;
     }
 
+
+    public long getTotalCategoriesinBP(int bpartner_id) {
+        ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
+
+        long numRows = productCategoryinBPHelper.getTotalCategoriesinBP(bpartner_id);
+        if (numRows == -1) {
+            Log.e(LOG_TAG, "No product categories in BP found");
+            return 0;
+        }
+        Log.i(LOG_TAG, numRows + " product categories in BP found");
+        return numRows;
+    }
+
     /**
      * Return product category if exist
      * @param id
@@ -554,7 +597,7 @@ public class DataMapper implements Serializable {
         ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
         return productCategoryinBPHelper.getProductCategoryinBP(id);
     }
-
+/*
 
     /**
      * Return product if exist
@@ -576,9 +619,9 @@ public class DataMapper implements Serializable {
         return productCategoryHelper.getAllProductCategories();
     }
 
-    public List<ProductCategoryinBusinessPartner> getAllCategoriesinBP() {
+    public List<ProductCategoryinBusinessPartner> getAllCategoriesinBP(int bpartner_id) {
         ProductCategoryinBPHelper productCategoryinBPHelper = new ProductCategoryinBPHelper(mContext);
-        return productCategoryinBPHelper.getAllProductCategories();
+        return productCategoryinBPHelper.getAllProductCategories(bpartner_id);
     }
 
     public List<MProduct> getSoldProducts() {
@@ -650,6 +693,8 @@ public class DataMapper implements Serializable {
         PosProductPriceHelper productPriceHelper = new PosProductPriceHelper(mContext);
         return productPriceHelper.getProductPrice(id);
     }
+
+
 
     private boolean removePosOrder(POSOrder order) {
         PosOrderHelper orderHelper = new PosOrderHelper(mContext);

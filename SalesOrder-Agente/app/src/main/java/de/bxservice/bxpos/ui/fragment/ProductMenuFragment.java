@@ -40,6 +40,7 @@ import java.util.List;
 
 import de.bxservice.bxpos.R;
 import de.bxservice.bxpos.logic.model.idempiere.MProduct;
+import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.logic.model.pos.NewOrderGridItem;
 import de.bxservice.bxpos.logic.model.idempiere.ProductCategory;
 import de.bxservice.bxpos.logic.model.pos.PosProperties;
@@ -60,6 +61,7 @@ public class ProductMenuFragment extends Fragment {
     private ArrayList<NewOrderGridItem> mGridData;
     private GridOrderViewAdapter mGridAdapter;
     private List<ProductCategory> productCategoryList;
+    private List<ProductCategoryinBusinessPartner> productCategoryListinBP;
     private HashMap<NewOrderGridItem, MProduct> itemProductHashMap;
 
     public ArrayList<NewOrderGridItem> getmGridData() {
@@ -91,9 +93,19 @@ public class ProductMenuFragment extends Fragment {
 
         grid = (GridView) rootView.findViewById(R.id.create_order_gridview);
 
-        productCategoryList = ProductCategory.getAllCategories(getActivity().getBaseContext());
+     //   productCategoryList = ProductCategory.getAllCategories(getActivity().getBaseContext());
 
-        ProductCategory productCategory = productCategoryList.get(sectionNumber);
+        //     ProductCategory productCategory = productCategoryList.get(sectionNumber);
+
+        int bpartner_id = ((CreateOrderActivity) getActivity()).getBP_Partnert_ID();
+
+        productCategoryListinBP = ProductCategoryinBusinessPartner.getAllCategories(getActivity().getBaseContext(), bpartner_id);
+
+        ProductCategoryinBusinessPartner productCategoryinBP = null;
+
+        if (!productCategoryListinBP.isEmpty()) {
+            productCategoryinBP = productCategoryListinBP.get(sectionNumber);
+        }
 
         mGridData = new ArrayList<>();
         itemProductHashMap = new HashMap<>();
@@ -102,27 +114,29 @@ public class ProductMenuFragment extends Fragment {
 
         NewOrderGridItem item;
         int qtyOrdered;
-        for(MProduct product : productCategory.getProducts()) {
+        if (!productCategoryListinBP.isEmpty()) {
+            for (MProduct product : productCategoryinBP.getProducts()) {
 
-            if (product.getProductPrice(getContext(),((CreateOrderActivity) getActivity()).getBP_PriceList_ID() ) != null) {
-                item = new NewOrderGridItem();
-                item.setName(product.getProductName());
-                item.setKey(product.getProductKey());
+                if (product.getProductPrice(getContext(), ((CreateOrderActivity) getActivity()).getBP_PriceList_ID()) != null) {
+                    item = new NewOrderGridItem();
+                    item.setName(product.getProductName());
+                    item.setKey(product.getProductKey());
 
-                if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
-                    item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
-                else
-                    item.setPrice("");
+                    if (!product.askForPrice(((CreateOrderActivity) getActivity()).getBP_PriceList_ID()))
+                        item.setPrice(currencyFormat.format(product.getProductPriceValue(((CreateOrderActivity) getActivity()).getBP_PriceList_ID())));
+                    else
+                        item.setPrice("");
 
-                //When you navigate through the tabs it paints again everything - this lets the number stay
-                qtyOrdered = ((CreateOrderActivity) getActivity()).getProductQtyOrdered(product);
-                if (qtyOrdered != 0)
-                    item.setQty("x" + Integer.toString(qtyOrdered));
-                else
-                    item.setQty("");
+                    //When you navigate through the tabs it paints again everything - this lets the number stay
+                    qtyOrdered = ((CreateOrderActivity) getActivity()).getProductQtyOrdered(product);
+                    if (qtyOrdered != 0)
+                        item.setQty("x" + Integer.toString(qtyOrdered));
+                    else
+                        item.setQty("");
 
-                mGridData.add(item);
-                itemProductHashMap.put(item, product);
+                    mGridData.add(item);
+                    itemProductHashMap.put(item, product);
+                }
             }
         }
 

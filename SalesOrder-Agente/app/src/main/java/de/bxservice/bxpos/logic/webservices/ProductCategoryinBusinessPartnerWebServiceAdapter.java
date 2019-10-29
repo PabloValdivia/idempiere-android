@@ -16,7 +16,7 @@ import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner
 public class ProductCategoryinBusinessPartnerWebServiceAdapter extends  AbstractWSObject{
 
     //Associated record in Web Service Security in iDempiere
-    private static final String SERVICE_TYPE = "QueryProductCategory";
+    private static final String SERVICE_TYPE = "QueryProductCategoryinBP";
 
     private List<ProductCategoryinBusinessPartner> productCategoryList;
 
@@ -52,6 +52,7 @@ public class ProductCategoryinBusinessPartnerWebServiceAdapter extends  Abstract
                 int categoryID;
                 String categoryName;
                 int productID;
+                String BXS_ProductCategoryin_BP_ID;
 
                 for (int i = 0; i < response.getDataSet().getRowsCount(); i++) {
 
@@ -60,6 +61,7 @@ public class ProductCategoryinBusinessPartnerWebServiceAdapter extends  Abstract
                     categoryID = 0;
                     categoryName = null;
                     productID=0;
+                    BXS_ProductCategoryin_BP_ID=null;
 
                     for (int j = 0; j < response.getDataSet().getRow(i).getFieldsCount(); j++) {
 
@@ -74,10 +76,12 @@ public class ProductCategoryinBusinessPartnerWebServiceAdapter extends  Abstract
                             categoryName = field.getStringValue();
                         else if ("M_Product_ID".equalsIgnoreCase(field.getColumn()))
                             productID = Integer.valueOf(field.getStringValue());
+                        else if ("BXS_ProductCategoryin_BP_ID".equalsIgnoreCase(field.getColumn()))
+                            BXS_ProductCategoryin_BP_ID = field.getStringValue();
                     }
 
                     if(categoryName != null &&  categoryID!= 0){
-                        ProductCategoryinBusinessPartner p = new ProductCategoryinBusinessPartner(categoryID, categoryName);
+                        ProductCategoryinBusinessPartner p = new ProductCategoryinBusinessPartner(bpartnerID, categoryID, categoryName, productID, BXS_ProductCategoryin_BP_ID);
                         productCategoryList.add(p);
                     }
 

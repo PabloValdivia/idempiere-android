@@ -22,11 +22,11 @@ public class ProductCategoryinBusinessPartnerManagement  extends AbstractObjectM
         return true;
     }
 
-    public long getTotalCategories() {
-        return dataMapper.getTotalCategories();
+    public long getTotalCategoriesInBP(int bpartner_id) {
+        return dataMapper.getTotalCategoriesinBP(bpartner_id);
     }
 
-    public List<ProductCategoryinBusinessPartner> getAllCategories() {
-        return dataMapper.getAllCategoriesinBP();
+    public List<ProductCategoryinBusinessPartner> getAllCategoriesinBP(int bpartner_id) {
+        return dataMapper.getAllCategoriesinBP(bpartner_id);
     }
 }

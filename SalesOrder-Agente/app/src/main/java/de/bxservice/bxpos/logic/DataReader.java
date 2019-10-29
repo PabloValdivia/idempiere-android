@@ -34,6 +34,7 @@ import de.bxservice.bxpos.logic.model.idempiere.CBPartner;
 import de.bxservice.bxpos.logic.model.idempiere.DefaultPosData;
 import de.bxservice.bxpos.logic.model.idempiere.MProduct;
 import de.bxservice.bxpos.logic.model.idempiere.PosTenderType;
+import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.logic.model.idempiere.RestaurantInfo;
 import de.bxservice.bxpos.logic.model.idempiere.ProductCategory;
 import de.bxservice.bxpos.logic.model.idempiere.ProductPrice;
@@ -49,6 +50,7 @@ import de.bxservice.bxpos.logic.webservices.OutputDeviceWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.PosTenderTypeWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.PosUserWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.ProductCategoryWebServiceAdapter;
+import de.bxservice.bxpos.logic.webservices.ProductCategoryinBusinessPartnerWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.ProductPriceWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.ProductWebServiceAdapter;
 import de.bxservice.bxpos.logic.webservices.TableWebServiceAdapter;
@@ -65,6 +67,7 @@ public class DataReader {
     private static final String LOG_TAG = "Data Reader";
 
     private List<ProductCategory> productCategoryList = new ArrayList<>();
+    private List<ProductCategoryinBusinessPartner> productCategoryInBusinessPartnerList = new ArrayList<>();
     private List<TableGroup> tableGroupList = new ArrayList<>();
     private List<TaxCategory> taxCategoryList = new ArrayList<>();
     private List<MProduct> productList = new ArrayList<>();
@@ -149,6 +152,22 @@ public class DataReader {
         });
 
         productCategoryThread.run();
+
+        Thread productCategoryinBPThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ProductCategoryinBusinessPartnerWebServiceAdapter productCategoryinBPWS = new ProductCategoryinBusinessPartnerWebServiceAdapter(wsData);
+                if (productCategoryinBPWS.isSuccess()) {
+
+                    productCategoryInBusinessPartnerList = productCategoryinBPWS.getProductCategoryList();
+                    persistProductCategoryInPartner();
+
+
+                }
+            }
+        });
+
+        productCategoryinBPThread.run();
 
         Thread BPartnerInfoThread = new Thread(new Runnable() {
             @Override
@@ -266,6 +285,11 @@ public class DataReader {
             bpartner.save(mContext);
     }
 
+    private void persistProductCategoryInPartner() {
+        for(ProductCategoryinBusinessPartner prodcategoryinbp : productCategoryInBusinessPartnerList)
+            prodcategoryinbp.save(mContext);
+    }
+
     /**
      * Save product attributes in the database
      */
@@ -295,6 +319,7 @@ public class DataReader {
     public boolean isDataComplete(){
 
         if(productCategoryList   != null && !productCategoryList.isEmpty() &&
+                productCategoryInBusinessPartnerList != null && !productCategoryInBusinessPartnerList.isEmpty() &&
                 productList      != null && !productList.isEmpty() &&
                 tableGroupList   != null && !tableGroupList.isEmpty() &&
                 productPriceList != null && !productPriceList.isEmpty() &&

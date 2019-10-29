@@ -31,7 +31,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.util.Log;
 
-import de.bxservice.bxpos.logic.model.idempiere.ProductCategoryinBusinessPartner;
 import de.bxservice.bxpos.persistence.dbcontract.BPartnerContract;
 import de.bxservice.bxpos.persistence.dbcontract.DefaultPosDataContract;
 import de.bxservice.bxpos.persistence.dbcontract.GroupTableContract;
@@ -268,7 +267,9 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
     private static final String CREATE_PRODUCT_CATEGORY_IN_BPARTNER_TABLE =
             "CREATE TABLE " + Tables.TABLE_PRODUCT_CATEGORYINBPARTNER +
                     "(" +
-                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_BPARTNER_ID + " INTEGER PRIMARY KEY" +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_PRODUCT_CATEGORYINBPARTNER_ID + " INTEGER PRIMARY KEY" +
+                    ", " +
+                    ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_BPARTNER_ID + " INTEGER NOT NULL" +
                     ", " +
                     ProductCategoryinBPContract.ProductCategoryinBP.COLUMN_NAME_PRODUCT_CATEGORY_ID + " INTEGER NOT NULL" +
                     ", " +
@@ -431,6 +432,7 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
                     ")";
 
     //Alter queries
+
     private static final String ALTER_USER_DISPLAY_NAME =
             "ALTER TABLE "             + Tables.TABLE_USER +
                     " ADD COLUMN " + UserContract.User.COLUMN_NAME_DISPLAY_NAME + " VARCHAR(256)";
@@ -598,6 +600,7 @@ public class PosDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_POSPAYMENT);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_PRODUCT);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_PRODUCT_CATEGORY);
+        db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_PRODUCT_CATEGORYINBPARTNER);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_PRODUCT_PRICE);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + Tables.TABLE_TABLE_GROUP);

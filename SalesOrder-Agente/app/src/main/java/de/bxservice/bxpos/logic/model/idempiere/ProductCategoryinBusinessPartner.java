@@ -8,6 +8,8 @@ import java.util.List;
 import de.bxservice.bxpos.logic.daomanager.ProductCategoryinBusinessPartnerManagement;
 
 public class ProductCategoryinBusinessPartner {
+
+    private String productCategoryinBpartnerID;
     private int bpartnerID;
     private int productCategoryID;
     private String name;
@@ -18,9 +20,12 @@ public class ProductCategoryinBusinessPartner {
     public ProductCategoryinBusinessPartner(){
     }
 
-    public ProductCategoryinBusinessPartner(int id, String name){
-        productCategoryID = id;
+    public ProductCategoryinBusinessPartner(int bpartnerID, int productCategoryID, String name, int productID, String productCategoryinBpartnerID){
+        this.bpartnerID=bpartnerID;
+        this.productCategoryID = productCategoryID;
         this.name = name;
+        this.productID=productID;
+        this.productCategoryinBpartnerID=productCategoryinBpartnerID;
 
     }
 
@@ -38,6 +43,14 @@ public class ProductCategoryinBusinessPartner {
 
     public void setBPartnerID(int bpartnerID) {
         this.bpartnerID = bpartnerID;
+    }
+
+    public String getProductCategoryinBPartnerID() {
+        return productCategoryinBpartnerID;
+    }
+
+    public void setProductCategoryinBPartnerID(String productCategoryinBpartnerID) {
+        this.productCategoryinBpartnerID = productCategoryinBpartnerID;
     }
 
     public String getName() {
@@ -74,13 +87,9 @@ public class ProductCategoryinBusinessPartner {
      */
     public boolean save(Context ctx) {
 
-        //No save in the database if the Product Category does not have products
-        if (products.isEmpty())
-            return false;
-
         productCategoryManager = new ProductCategoryinBusinessPartnerManagement(ctx);
 
-        if (productCategoryManager.get(productCategoryID) == null)
+        if (productCategoryManager.get(Long.parseLong(productCategoryinBpartnerID)) == null)
             return createProductCategory();
         else
             return updateProductCategory();
@@ -94,9 +103,9 @@ public class ProductCategoryinBusinessPartner {
         return productCategoryManager.create(this);
     }
 
-    public static List<ProductCategoryinBusinessPartner> getAllCategories(Context ctx) {
+    public static List<ProductCategoryinBusinessPartner> getAllCategories(Context ctx, int bpartner_id) {
         ProductCategoryinBusinessPartnerManagement categoryManager = new ProductCategoryinBusinessPartnerManagement(ctx);
-        return categoryManager.getAllCategories();
+        return categoryManager.getAllCategoriesinBP(bpartner_id);
     }
 }
 

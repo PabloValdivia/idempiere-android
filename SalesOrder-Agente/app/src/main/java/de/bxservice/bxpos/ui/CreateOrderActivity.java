@@ -152,11 +152,12 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mCreateOrderPagerAdapter = new CreateOrderPagerAdapter(getSupportFragmentManager(), getBaseContext());
+        mCreateOrderPagerAdapter = new CreateOrderPagerAdapter(getSupportFragmentManager(), getBaseContext(), BPartner_ID, 10);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.createOrderContainer);
         mViewPager.setAdapter(mCreateOrderPagerAdapter);
+   //     mViewPager.setOffscreenPageLimit (1);
 
 
         recyclerView = (RecyclerView) findViewById(R.id.search_item_view);
@@ -192,6 +193,8 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
 
         tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         tabs.setViewPager(mViewPager);
+        invisibleTabs();
+
 
         sendActionButton = (FloatingActionButton) findViewById(R.id.fab);
         sendActionButton.setOnClickListener(new View.OnClickListener() {
@@ -337,6 +340,13 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
      * - Table number
      * - Number of guests
      */
+
+    public void invisibleTabs(){
+
+    //    ((ViewGroup) tabs.getChildAt(0)).getChildAt(0).setVisibility(View.GONE);
+
+    }
+
     private void getExtras() {
         Bundle extras = getIntent().getExtras();
 
@@ -594,6 +604,11 @@ public class CreateOrderActivity extends AppCompatActivity implements GuestNumbe
     public int getBP_PriceList_ID() {
 
         return BP_PriceList_ID;
+    }
+
+    public int getBP_Partnert_ID() {
+
+        return BPartner_ID;
     }
 
 

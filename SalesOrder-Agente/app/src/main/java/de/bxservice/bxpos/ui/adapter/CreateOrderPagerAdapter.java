@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.bxservice.bxpos.logic.daomanager.PosProductCategoryManagement;
+import de.bxservice.bxpos.logic.daomanager.ProductCategoryinBusinessPartnerManagement;
 import de.bxservice.bxpos.logic.model.pos.NewOrderGridItem;
 import de.bxservice.bxpos.ui.fragment.ProductMenuFragment;
 
@@ -43,13 +44,18 @@ import de.bxservice.bxpos.ui.fragment.ProductMenuFragment;
 public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
-    private PosProductCategoryManagement dataProvider;
+    private int BPartner_ID;
+    private int NumOfTabs;
+    private ProductCategoryinBusinessPartnerManagement dataProvider;
+ //   private PosProductCategoryManagement dataProvider;
     private List<Fragment> foodFragments = new ArrayList<>();
 
-    public CreateOrderPagerAdapter(FragmentManager fm, Context context) {
+    public CreateOrderPagerAdapter(FragmentManager fm, Context context, int bpartner_ID, int NumOfTabs) {
         super(fm);
         mContext = context;
-        dataProvider = new PosProductCategoryManagement(mContext);
+        BPartner_ID=bpartner_ID;
+        this.NumOfTabs=NumOfTabs;
+        dataProvider = new ProductCategoryinBusinessPartnerManagement(mContext);
     }
 
     @Override
@@ -65,8 +71,16 @@ public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
      */
     public int getCount() {
 
-        return (int) dataProvider.getTotalCategories();
-      //  return 2;
+        if ((int) dataProvider.getTotalCategoriesInBP(BPartner_ID)>0) {
+            return (int) dataProvider.getTotalCategoriesInBP(BPartner_ID);
+        }
+        else {
+            return 1;
+        }
+       //int b=a;
+   //     return (int) dataProvider.getTotalCategories();
+       // return 2;
+
     }
 
     @Override
@@ -75,7 +89,13 @@ public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
      */
     public CharSequence getPageTitle(int position) {
 
-        return dataProvider.getAllCategories().get(position).getName();
+        if ((int) dataProvider.getTotalCategoriesInBP(BPartner_ID)>0) {
+            return dataProvider.getAllCategoriesinBP(BPartner_ID).get(position).getName();
+        } else {
+            return "No prodotti nel listino";
+        }
+ //       return "aa";
+   //     return dataProvider.getAllCategories().get(position).getName();
     }
 
     /**
