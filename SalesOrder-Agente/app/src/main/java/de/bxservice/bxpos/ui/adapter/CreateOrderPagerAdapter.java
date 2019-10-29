@@ -72,8 +72,7 @@ public class CreateOrderPagerAdapter extends FragmentPagerAdapter {
 
         if ((int) dataProvider.getTotalCategoriesInBP(BPartner_ID)>0) {
             return (int) dataProvider.getTotalCategoriesInBP(BPartner_ID);
-        }
-        else {
+        } else {
             return 1;
         }
        //int b=a;
