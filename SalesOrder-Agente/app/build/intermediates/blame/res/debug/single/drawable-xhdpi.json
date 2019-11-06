@@ -20,6 +20,10 @@
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xhdpi/ic_done_white_24dp.png"
     },
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xhdpi/euro30z.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xhdpi/euro30z.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_card_giftcard_white_24dp.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xhdpi/ic_card_giftcard_white_24dp.png"
     },

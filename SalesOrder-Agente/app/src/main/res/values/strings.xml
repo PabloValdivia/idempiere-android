@@ -119,7 +119,7 @@
     <string name="nine">9</string>
     <string name="zero">0</string>
     <string name="decimal">.</string>
-    <string name="exact">Quick Pay</string>
+    <string name="exact">Complete Order</string>
     <string name="del">Del</string>
     <string name="pay">Pay</string>
     <string name="set_extra">Surcharge</string>

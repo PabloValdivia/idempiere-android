@@ -64,6 +64,10 @@
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xxhdpi/ic_donut_large_black_24dp.png"
     },
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi/euro30z.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xxhdpi/euro30z.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_settings_white_24dp.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-xxhdpi/ic_settings_white_24dp.png"
     },

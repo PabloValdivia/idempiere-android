@@ -436,7 +436,7 @@
     <string name="error_no_connection_username">No internet connection and unknown username!</string>
     <string name="error_no_server_data_configured">Login data missing. Please contact the administrator!</string>
     <string name="error_qty_void">The maximum qty to void is: %1$d</string>
-    <string name="exact">Quick Pay</string>
+    <string name="exact">Complete Order</string>
     <string name="firebase_database_url" translatable="false">https://bx-service-pos.firebaseio.com</string>
     <string name="five">5</string>
     <string name="four">4</string>

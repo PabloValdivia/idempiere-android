@@ -40,6 +40,10 @@
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-hdpi/ic_chevron_right_black_24dp.png"
     },
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-hdpi/euro30z.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-hdpi/euro30z.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-hdpi/freibier_logo_old.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-hdpi/freibier_logo_old.png"
     },

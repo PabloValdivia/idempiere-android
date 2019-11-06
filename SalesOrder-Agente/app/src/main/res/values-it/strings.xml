@@ -119,22 +119,22 @@
     <string name="nine">9</string>
     <string name="zero">0</string>
     <string name="decimal">.</string>
-    <string name="exact">Pagamento rapido</string>
+    <string name="exact">Completa Ordine</string>
     <string name="del">Elimina</string>
-    <string name="pay">Paga</string>
+    <string name="pay">Completa</string>
     <string name="set_extra">Sovraprezzo</string>
     <string name="add_discount">Sconto</string>
-    <string name="title_activity_pay_order">Pagamento</string>
+    <string name="title_activity_pay_order">Completa Ordine</string>
     <string name="reason">Motivo</string>
     <string name="change">Cambio</string>
     <string name="change_value">Cambio: %1$s</string>
     <string name="to_pay">Pagare: %1$s</string>
     <string name="surcharge_value">Sovraprezzo: %1$s</string>
     <string name="discount_value">Sconto: %1$s</string>
-    <string name="paid">Pagato</string>
-    <string name="paid_value">Pagato: %1$s</string>
+    <string name="paid">Completo</string>
+    <string name="paid_value">Completo: %1$s</string>
     <string name="percentage_sign">%</string>
-    <string name="currency_symbol">$</string>
+    <string name="currency_symbol">€</string>
 
     <string name="order">Ordine</string>
     <string name="unset_table">Take away / Bar</string>
@@ -191,8 +191,8 @@
     <string name="yes">Si</string>
     <string name="change_url">Questa azione eliminerà il database locale. Vuoi procedere?</string>
     <string name="no_success_on_sync_order">C\'era un errore. Contatta l\'amministratore</string>
-    <string name="no_allow_complimentary">L\'articolo %1€s non può essere gratuito</string>
-    <string name="complete_order">Pagare ordine?</string>
+    <string name="no_allow_complimentary">L\'articolo %1$s non può essere gratuito</string>
+    <string name="complete_order">Completare ordine?</string>
     <string name="no_undone_operation">Questa operazione non può essere annullata</string>
 
     <!-- About activity strings -->

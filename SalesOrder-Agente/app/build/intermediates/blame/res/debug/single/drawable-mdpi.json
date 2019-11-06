@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-mdpi/euro30z.png",
+        "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-mdpi/euro30z.png"
+    },
+    {
         "merged": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_delete_white_24dp.png",
         "source": "/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/src/main/res/drawable-mdpi/ic_delete_white_24dp.png"
     },

@@ -108,11 +108,11 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Apri sul telefono"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Accedi"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Accedi con Google"</string>
-    <string name="complete_order">Pagare ordine?</string>
+    <string name="complete_order">Completare ordine?</string>
     <string name="complimentary">Gratuito</string>
     <string name="confirm_exit">Tocca di nuovo per uscire da iDempiere Consulting POS</string>
     <string name="copy">Copia</string>
-    <string name="currency_symbol">$</string>
+    <string name="currency_symbol">€</string>
     <string name="decimal">.</string>
     <string name="del">Elimina</string>
     <string name="delete">Cancella</string>
@@ -134,7 +134,7 @@
     <string name="error_no_connection_username">Nessuna connessione Internet e Nome Utente sconosciuto!</string>
     <string name="error_no_server_data_configured">Dati login mancanti. Si prega di contattare l\'amministratore!</string>
     <string name="error_qty_void">La quantità massima da annullare è: %1$d</string>
-    <string name="exact">Pagamento rapido</string>
+    <string name="exact">Completa Ordine</string>
     <string name="five">5</string>
     <string name="four">4</string>
     <string name="from_date">Da: %1$s</string>
@@ -154,7 +154,7 @@
     <string name="new_order">Nuovo ordine</string>
     <string name="nine">9</string>
     <string name="no">No</string>
-    <string name="no_allow_complimentary">L\'articolo %1€s non può essere gratuito</string>
+    <string name="no_allow_complimentary">L\'articolo %1$s non può essere gratuito</string>
     <string name="no_connection_on_sync_order">l tuo dispositivo non è in grado di comunicare con iDempiere. Riprovare più tardi!</string>
     <string name="no_print_items">Non ci sono articoli da stampare</string>
     <string name="no_printing_device">Nessun dispositivo di stampa trovato</string>
@@ -173,9 +173,9 @@
     <string name="ordered">ORDINATO</string>
     <string name="ordering">ORDINAZIONE</string>
     <string name="organization">ID Organizzazione</string>
-    <string name="paid">Pagato</string>
-    <string name="paid_value">Pagato: %1$s</string>
-    <string name="pay">Paga</string>
+    <string name="paid">Completo</string>
+    <string name="paid_value">Completo: %1$s</string>
+    <string name="pay">Completa</string>
     <string name="pending_orders">Ordini in attesa</string>
     <string name="percentage_sign">%</string>
     <string name="powered_by">POS realizzato da Idempiere Consulting</string>
@@ -236,7 +236,7 @@
     <string name="title_activity_closed_orders">Ordini chiusi</string>
     <string name="title_activity_create_order">Nuovo ordine</string>
     <string name="title_activity_edit_order">Modifica ordine</string>
-    <string name="title_activity_pay_order">Pagamento</string>
+    <string name="title_activity_pay_order">Completa Ordine</string>
     <string name="title_activity_review_closed_order">Controlla ordine</string>
     <string name="title_activity_view_open_orders">Ordini aperti</string>
     <string name="to_date">A: %1$s</string>

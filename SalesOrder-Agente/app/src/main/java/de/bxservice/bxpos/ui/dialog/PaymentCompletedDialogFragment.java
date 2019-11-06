@@ -76,12 +76,12 @@ public class PaymentCompletedDialogFragment extends DialogFragment {
 
         totalText.setText(getString(R.string.total_value, currencyFormat.format(total)));
 
-        final TextView paidText = (TextView) view.findViewById(R.id.paid);
-        paidText.setText(getString(R.string.paid_value, currencyFormat.format(paidAmount)));
+//        final TextView paidText = (TextView) view.findViewById(R.id.paid);
+//        paidText.setText(getString(R.string.paid_value, currencyFormat.format(paidAmount)));
 
 
-        final TextView changeText = (TextView) view.findViewById(R.id.change);
-        changeText.setText(getString(R.string.change_value, currencyFormat.format(changeAmount)));
+ //       final TextView changeText = (TextView) view.findViewById(R.id.change);
+//        changeText.setText(getString(R.string.change_value, currencyFormat.format(changeAmount)));
 
         builder.setTitle(R.string.complete_order);
         builder.setMessage(R.string.no_undone_operation);
