@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.bxservice.bxpos.ui.PayOrderActivity"
+    >
+    <item android:id="@+id/set_extra"
+        android:title="@string/set_extra"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/add_discount"
+        android:title="@string/add_discount"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/add_note"
+        android:title="@string/note"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+</menu>

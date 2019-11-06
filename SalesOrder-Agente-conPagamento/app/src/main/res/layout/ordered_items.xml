@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum = "4"
+    android:background="@drawable/statelist_item_background"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/lblQty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="20dp"
+        android:layout_weight = "0.5"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    <TextView
+        android:id="@+id/lblName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_weight = "3"
+        android:paddingTop="16dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+
+    <TextView
+        android:id="@+id/lblpriceline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_weight = "0.5"
+        android:paddingTop="16dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:gravity="right" />
+
+</LinearLayout>

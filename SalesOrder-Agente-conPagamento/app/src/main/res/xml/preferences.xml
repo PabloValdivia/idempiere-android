@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_header_restaurant"
+        android:key="pref_key_restaurant_settings">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/bx_pos"
+            android:inputType="text"
+            android:key="pref_order_prefix"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:hint="@string/prefix"
+            android:title="@string/order_prefix" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="1"
+            android:inputType="number"
+            android:key="pref_order_number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:hint="@string/prefix_number"
+            android:title="@string/order_number_prefix" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_header_data_sync"
+        android:key="pref_key_storage_settings">
+        <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:defaultValue="180"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="sync_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_sync_frequency" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_header_general"
+        android:key="pref_key_storage_settings">
+
+        <PreferenceScreen
+            android:title="@string/server_data">
+            <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+            <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+            <EditTextPreference
+                android:capitalize="words"
+                android:defaultValue="@string/pref_default_display_name"
+                android:inputType="textUri"
+                android:key="pref_serverurl"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_name" />
+
+            <EditTextPreference
+                android:capitalize="words"
+                android:defaultValue=""
+                android:inputType="number"
+                android:key="pref_client"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/client" />
+
+            <EditTextPreference
+                android:capitalize="words"
+                android:defaultValue=""
+                android:inputType="number"
+                android:key="pref_org"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/organization" />
+
+            <EditTextPreference
+                android:capitalize="words"
+                android:defaultValue=""
+                android:inputType="number"
+                android:key="pref_role"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/role_id" />
+
+            <EditTextPreference
+                android:capitalize="words"
+                android:defaultValue=""
+                android:inputType="number"
+                android:key="pref_warehouse"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/warehouse_id" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:title="@string/about"
+        android:summary="@string/about_summary">
+        <intent android:targetPackage="de.bxservice.bxpos"
+            android:targetClass="de.bxservice.bxpos.ui.AboutActivity"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f42524c7b665a08dca9b5acd0a5327674ba3c91b">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0a5dcdbdaafe13321461c22db5cc0be4d0447e21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/libs/idempierewsc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0cf9818b440786d415557ff89ae27dec448d4f3f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/2/idempierewsc_9c68d3d0acf2d3a1b1be9b025c250db0d08ff78f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b59bd9663f2de81f2b3116347d949c349df9a9ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/libs/idempierewsc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0cf9818b440786d415557ff89ae27dec448d4f3f">
+        <dex dex="/opt/repos/idempiere-available-plugins/idempiere-android/SalesOrder-Agente/app/build/intermediates/pre-dexed/debug/idempierewsc_9c68d3d0acf2d3a1b1be9b025c250db0d08ff78f.jar" />
+    </item>
+
+</items>

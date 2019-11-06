@@ -1,0 +1,52 @@
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.bxservice.bxpos.ui.EditOrderActivity">
+
+    <item android:id="@+id/set_guests"
+        android:title="@string/guests"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/add_note"
+        android:title="@string/note"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/new_order"
+        android:title="@string/new_order"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/split_order"
+        android:title="@string/split_order"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/join_orders"
+        android:title="@string/join_orders"
+        android:orderInCategory="500"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/change_table"
+        android:title="@string/change_table"
+        android:orderInCategory="600"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/print_order"
+        android:title="@string/print_order"
+        android:orderInCategory="700"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/void_order"
+        android:title="@string/void_order"
+        android:orderInCategory="800"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/add_item"
+        android:title="@string/search"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add" />
+
+</menu>
